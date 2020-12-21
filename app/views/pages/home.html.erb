@@ -1,95 +1,116 @@
+<div class="root d-flex">
+  <div class="sidebar pt-5 px-3 bg-dark" style="position: sticky; top: 0px; height: 100vh;">
+  <p><a href="#"> Articles</a></p>
+  <p><a href="#"> Product Features </a></p>
+  <p><a href="#"> Dashboards </a></p>
+  <p><a href="#"> E-Commerce </a></p>
+  <p><a href="#"> Features </a></p>
+  <p><a href="#"> Forms </a></p>
+  <p><a href="#"> Gallery </a></p>
+  <p><a href="#"> Login </a></p>
+  <p><a href="#"> User Profile </a></p>
+  <p><a href="#"> Promo </a></p>
+  <p><a href="#"> Search </a></p>
+  <p><a href="#"> Testimonial </a></p>
+  <p><a href="#"> Settings </a></p>
 
-<div class="container mt-5">
-  <h1>This is UI Flow Bro</h1>
-  <h4> Check out these amazing Article Wireframes </h4>
-  <h4> Article #1 </h4>
-  <div class="main">
+  </div>
+  <div class="container pt-5">
+    <h1>This is UI Flow Bro</h1>
+    <p class="text-secondary"> A Bunch of rough layouts made in pure bootstrap to accelerate your front end workflow.</p>
+    <h1> Article Layout #1 </h1>
+    <hr>
+    <div class="main pb-5">
+      <img class='w-100' src="<%= asset_path('profile.png') %>" alt="">
+      <h2 class="mt-5">This is a header</h2>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quia cupiditate totam quibusdam eaque reiciendis, numquam. Dolorem suscipit culpa, itaque debitis accusamus voluptas corrupti doloremque consectetur beatae maiores magni aut nostrum officiis ducimus dolore! Dignissimos, maxime. Soluta harum aspernatur fugit incidunt voluptate aperiam dignissimos, doloribus quo vitae voluptatibus praesentium voluptatum ducimus nam itaque nostrum ut in odio molestias cupiditate perspiciatis!</p>
+
+      <p> Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ipsum eaque dolorem mollitia dolore. Nihil ea voluptatibus veritatis voluptatem debitis cumque architecto excepturi, labore enim ipsa fugit, amet voluptate quia ab unde odit repudiandae ullam nemo blanditiis! Numquam, voluptatibus esse mollitia ut, iure magni sunt sint debitis impedit. Odio assumenda aliquam, consequuntur molestias quod dolore voluptas sint sequi iure ab architecto?</p>
+
+      <div class="author d-flex justify-content-between align-items-middle">
+        <img src="<%= asset_path('avatar.png') %>" style="height: 40px" alt="avatar">
+        <button class="btn btn-primary btn-large"> Button </button>
+      </div>
+
+      <div class="code mt-5 py-3 border rounded">
+        <code>
+         <pre>
+           &lt;img class='w-100' src="./your-image-path" alt=""&gt;
+           &lt;h2 class="mt-5"&gt;`This is a header&lt;/h2&gt;`
+           &lt;p&gt;` ....&lt;/p&gt;`
+           &lt;p&gt;` .... &lt;/p&gt;`
+           &lt;div class="author d-flex justify-content-between align-items-middle"&gt;`
+           &lt;img src="&lt;%= asset_path('avatar.png') %&gt;`" style="height: 40px" alt="avatar"&gt;`
+           &lt;button class="btn btn-primary btn-large"&gt;` Button &lt;/button&gt;
+           &lt;/div&gt;`
+         </pre>
+       </code>
+     </div>
+   </div>
+
+  <h1> Article Layout #2 </h1>
+  <hr>
+   <div class="main pb-5">
     <img class='w-100' src="<%= asset_path('profile.png') %>" alt="">
-    <h2 class="mt-5">This is a header</h2>
+    <div class="row mt-5">
+      <div class="col-sm-8">
+        <h2> This is a title </h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Quidem, fugit! Unde tempore vero error nulla doloremque. Harum ipsam exercitationem pariatur placeat officiis, quia neque, quasi ratione. Eos, illum, id? Minus illum temporibus nisi deserunt id quo possimus error consectetur fugiat placeat nesciunt nemo ullam tenetur corrupti beatae unde rerum, eligendi.</p>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quia cupiditate totam quibusdam eaque reiciendis, numquam. Dolorem suscipit culpa, itaque debitis accusamus voluptas corrupti doloremque consectetur beatae maiores magni aut nostrum officiis ducimus dolore! Dignissimos, maxime. Soluta harum aspernatur fugit incidunt voluptate aperiam dignissimos, doloribus quo vitae voluptatibus praesentium voluptatum ducimus nam itaque nostrum ut in odio molestias cupiditate perspiciatis!</p>
+        <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae inventore ducimus, eius vel doloribus dignissimos! Consectetur ducimus ipsa explicabo rerum, quisquam, est exercitationem, nulla nostrum possimus expedita tempore alias dicta nemo, repellat tempora! Natus a, repudiandae id ad animi, obcaecati laudantium placeat blanditiis, neque adipisci aliquam repellat, officiis maxime iste.</p>
+        <div class="author">
+          <img src="<%= asset_path('avatar.png') %>" style="height:40px;" alt="">
+        </div>
+      </div>
 
-    <p> Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ipsum eaque dolorem mollitia dolore. Nihil ea voluptatibus veritatis voluptatem debitis cumque architecto excepturi, labore enim ipsa fugit, amet voluptate quia ab unde odit repudiandae ullam nemo blanditiis! Numquam, voluptatibus esse mollitia ut, iure magni sunt sint debitis impedit. Odio assumenda aliquam, consequuntur molestias quod dolore voluptas sint sequi iure ab architecto?</p>
-
-    <div class="author d-flex justify-content-between align-items-middle">
-      <img src="<%= asset_path('avatar.png') %>" style="height: 40px" alt="avatar">
-      <button class="btn btn-primary btn-large"> Button </button>
+      <div class="col-sm-4">
+        <div class="thumbnail pb-4">
+          <img src="<%= asset_path("thumbnail-small.png") %>" class="w-100" alt="">
+          <h4 class='mt-3'> this is important content</h4>
+        </div>
+        <img src="<%= asset_path("thumbnail-small.png") %>" class="w-100" alt="">
+        <h4 class='mt-3'> this is important content too</h4>
+      </div>
     </div>
-
     <div class="code mt-5 py-3 border rounded">
       <code>
        <pre>
-         &lt;img class='w-100' src="./your-image-path" alt=""&gt;
-         &lt;h2 class="mt-5"&gt;`This is a header&lt;/h2&gt;`
-         &lt;p&gt;` ....&lt;/p&gt;`
-         &lt;p&gt;` .... &lt;/p&gt;`
-         &lt;div class="author d-flex justify-content-between align-items-middle"&gt;`
-         &lt;img src="&lt;%= asset_path('avatar.png') %&gt;`" style="height: 40px" alt="avatar"&gt;`
-         &lt;button class="btn btn-primary btn-large"&gt;` Button &lt;/button&gt;
-         &lt;/div&gt;`
-       </pre>
-     </code>
-   </div>
- </div>
+         &lt;div class="row mt-5"&gt;
+         &lt;div class="col-sm-8"&gt;
+         &lt;h2&gt; This is a title &lt;/h2&gt;
+         &lt;p&gt; ....&lt;/p&gt;
 
- <h4> Article #2 </h4>
- <div class="main">
-  <img class='w-100' src="<%= asset_path('profile.png') %>" alt="">
-  <div class="row mt-5">
-    <div class="col-sm-8">
-      <h2> This is a title </h2>
-      <p> Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Quidem, fugit! Unde tempore vero error nulla doloremque. Harum ipsam exercitationem pariatur placeat officiis, quia neque, quasi ratione. Eos, illum, id? Minus illum temporibus nisi deserunt id quo possimus error consectetur fugiat placeat nesciunt nemo ullam tenetur corrupti beatae unde rerum, eligendi.</p>
+         &lt;p&gt; ....&lt;/p&gt;
+         &lt;div class="author"&gt;
+         &lt;img src="&lt;%= asset_path('avatar.png') %&gt;" style="height:40px;" alt=""&gt;
+         &lt;/div&gt;
+         &lt;/div&gt;
 
-      <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae inventore ducimus, eius vel doloribus dignissimos! Consectetur ducimus ipsa explicabo rerum, quisquam, est exercitationem, nulla nostrum possimus expedita tempore alias dicta nemo, repellat tempora! Natus a, repudiandae id ad animi, obcaecati laudantium placeat blanditiis, neque adipisci aliquam repellat, officiis maxime iste.</p>
-      <div class="author">
-        <img src="<%= asset_path('avatar.png') %>" style="height:40px;" alt="">
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="thumbnail pb-4">
-        <img src="<%= asset_path("thumbnail-small.png") %>" class="w-100" alt="">
-        <h4 class='mt-3'> this is important content</h4>
-      </div>
-      <img src="<%= asset_path("thumbnail-small.png") %>" class="w-100" alt="">
-      <h4 class='mt-3'> this is important content too</h4>
-    </div>
-  </div>
-  <div class="code mt-5 py-3 border rounded">
-    <code>
-     <pre>
-       &lt;div class="row mt-5"&gt;
-       &lt;div class="col-sm-8"&gt;
-       &lt;h2&gt; This is a title &lt;/h2&gt;
-       &lt;p&gt; ....&lt;/p&gt;
-
-       &lt;p&gt; ....&lt;/p&gt;
-       &lt;div class="author"&gt;
-       &lt;img src="&lt;%= asset_path('avatar.png') %&gt;" style="height:40px;" alt=""&gt;
-       &lt;/div&gt;
-       &lt;/div&gt;
-
-       &lt;div class="col-sm-4"&gt;
-       &lt;div class="thumbnail pb-4"&gt;
-       &lt;img src="&lt;%= asset_path("thumbnail-small.png") %&gt;" class="w-100" alt=""&gt;
-       &lt;h4 class='mt-3'&gt; this is important content&lt;/h4&gt;
-        &lt;/div&gt;
-          &lt;img src="&lt;%= asset_path("thumbnail-small.png") %&gt;" class="w-100" alt=""&gt;
-          &lt;h4 class='mt-3'&gt; this is important content too&lt;/h4&gt;
+         &lt;div class="col-sm-4"&gt;
+         &lt;div class="thumbnail pb-4"&gt;
+         &lt;img src="&lt;%= asset_path("thumbnail-small.png") %&gt;" class="w-100" alt=""&gt;
+         &lt;h4 class='mt-3'&gt; this is important content&lt;/h4&gt;
           &lt;/div&gt;
-       &lt;/div&gt;
-    </pre>
-  </code>
-</div>
-</div>
-
-  <div class="main">
-    <h4> Article #3 </h4>
-    <img src="<%= asset_path("thumbnail-small.png") %>" class="float-left mr-3" style="width:45vw" alt="">
-     <p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quas quod, harum temporibus quos quidem rem, excepturi quia repellat ipsum officiis asperiores omnis officia esse, impedit aliquam ea fuga hic. Doloremque, vel aliquid sequi voluptate consequuntur nesciunt. Eum eaque, nesciunt, molestias nisi esse suscipit, quidem voluptatem inventore iure, incidunt similique repellendus id ducimus. Suscipit cumque qui illum eum hic quaerat facere quidem, optio aliquid quam eius? Animi sapiente ipsum, at debitis.</p>
-
-     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sed quaerat eius quis? Totam suscipit itaque molestiae, quia minus laboriosam, ipsam explicabo quaerat, nihil ullam expedita, dolor soluta inventore. Architecto velit maiores quod iusto doloribus culpa eum provident, eius, nulla, magnam nam delectus nobis optio ea deserunt quo cum facilis, nemo similique fugit asperiores suscipit at. Sed voluptatibus a quis, voluptatem quidem, at blanditiis! Dolore quos atque, consectetur, vel exercitationem nam excepturi fugiat officia laborum voluptas animi aut quibusdam cupiditate asperiores maiores. Repudiandae ratione est cum magnam saepe aspernatur non, quae molestiae iste mollitia, modi omnis obcaecati odio, earum numquam?</p>
+            &lt;img src="&lt;%= asset_path("thumbnail-small.png") %&gt;" class="w-100" alt=""&gt;
+            &lt;h4 class='mt-3'&gt; this is important content too&lt;/h4&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      </pre>
+    </code>
+  </div>
   </div>
 
+    <div class="main">
+      <h1> Article Layout #2 </h1>
+      <hr>
+      <img src="<%= asset_path("thumbnail-small.png") %>" class="float-left mr-3" style="width:45vw" alt="">
+       <h2>An Article Worth Your Time </h2>
+       <p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quas quod, harum temporibus quos quidem rem, excepturi quia repellat ipsum officiis asperiores omnis officia esse, impedit aliquam ea fuga hic. Doloremque, vel aliquid sequi voluptate consequuntur nesciunt. Eum eaque, nesciunt, molestias nisi esse suscipit, quidem voluptatem inventore iure, incidunt similique repellendus id ducimus. Suscipit cumque qui illum eum hic quaerat facere quidem, optio aliquid quam eius? Animi sapiente ipsum, at debitis.</p>
 
+       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sed quaerat eius quis? Totam suscipit itaque molestiae, quia minus laboriosam, ipsam explicabo quaerat, nihil ullam expedita, dolor soluta inventore. Architecto velit maiores quod iusto doloribus culpa eum provident, eius, nulla, magnam nam delectus nobis optio ea deserunt quo cum facilis, nemo similique fugit asperiores suscipit at. Sed voluptatibus a quis, voluptatem quidem, at blanditiis! Dolore quos atque, consectetur, vel exercitationem nam excepturi fugiat officia laborum voluptas animi aut quibusdam cupiditate asperiores maiores. Repudiandae ratione est cum magnam saepe aspernatur non, quae molestiae iste mollitia, modi omnis obcaecati odio, earum numquam?</p>
+    </div>
+
+
+  </div>
 </div>
