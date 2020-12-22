@@ -1,0 +1,43 @@
+<section id="#article_1" class="align-items-end" data-controller="article-1" >
+  <h1 class="mr-3">  Article Layout #1 </h1>
+
+  <div class="custom-control custom-switch mb-3">
+    <input type="checkbox" class="custom-control-input" id="customSwitch1" data-action="change->article-1#toggle">
+    <label class="custom-control-label text-secondary" for="customSwitch1" data-article-1-target="label">See Live</label>
+  </div>
+
+  <hr>
+
+  <div class="main pb-5">
+    <img class='w-100' src="<%= asset_path('profile.png') %>" alt="" data-article-1-target="imageWireframe">
+    <img class='w-100 d-none' src="<%= asset_path('profile-show.png') %>" alt="" data-article-1-target="imageShow">
+
+    <h2 class="mt-5 wireframe" data-article-1-target="header"> My incredible Trip tp the space desert. </h2>
+    <div class="wireframe text-secondary" data-article-1-target="body" >
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quia cupiditate totam quibusdam eaque reiciendis, numquam. Dolorem suscipit culpa, itaque debitis accusamus voluptas corrupti doloremque consectetur beatae maiores magni aut nostrum officiis ducimus dolore! Dignissimos, maxime. Soluta harum aspernatur fugit incidunt voluptate aperiam dignissimos, doloribus quo vitae voluptatibus praesentium voluptatum ducimus nam itaque nostrum ut in odio molestias cupiditate perspiciatis!</p>
+
+      <p> Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ipsum eaque dolorem mollitia dolore. Nihil ea voluptatibus veritatis voluptatem debitis cumque architecto excepturi, labore enim ipsa fugit, amet voluptate quia ab unde odit repudiandae ullam nemo blanditiis! Numquam, voluptatibus esse mollitia ut, iure magni sunt sint debitis impedit. Odio assumenda aliquam, consequuntur molestias quod dolore voluptas sint sequi iure ab architecto?</p>
+    </div>
+    <div class="author d-flex justify-content-between align-items-middle">
+      <img src="<%= asset_path('avatar.png') %>" style="height: 40px" alt="avatar" data-article-1-target="avatarWireframe">
+      <img src="<%= asset_path('avatar-show.jpeg') %>" style="height: 40px; border-radius: 50%;" alt="avatar" class="d-none" data-article-1-target="avatarShow">
+      <button class="btn btn-primary btn-large wireframe"
+               data-article-1-target="button"> Subscribe </button>
+    </div>
+
+    <div class="code mt-5 py-3 border rounded">
+      <code>
+       <pre>
+         &lt;img class='w-100' src="./your-image-path" alt=""&gt;
+         &lt;h2 class="mt-5"&gt;`This is a header&lt;/h2&gt;`
+           &lt;p&gt; ....&lt;/p&gt;
+           &lt;p&gt; .... &lt;/p&gt;
+         &lt;div class="author d-flex justify-content-between align-items-middle"&gt;
+           &lt;img src="&lt;%= asset_path('avatar.png') %&gt;" style="height: 40px" alt="avatar"&gt;
+           &lt;button class="btn btn-primary btn-large"&gt; Subscribe &lt;/button&gt;
+         &lt;/div&gt;
+       </pre>
+     </code>
+   </div>
+ </div>
+</section>
