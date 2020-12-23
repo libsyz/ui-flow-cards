@@ -10,7 +10,7 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "main" ]
+  static targets = [ "main", "label" ]
   static classes = [ "wireframe" ]
   active = false;
 
@@ -33,12 +33,30 @@ export default class extends Controller {
     if (this.active == false) {
       this.active = true;
       this.mainTarget.classList.remove('wireframe');
+      this.showAllImages();
       this.labelTarget.innerText = "See Wireframe";
     } else {
       this.active = false;
       this.mainTarget.classList.add('wireframe');
+      this.wireframeAllImages();
       this.labelTarget.innerText = "See Live"
     }
+  }
+
+  showAllImages() {
+  const allImages = this.selectAllImages();
+    allImages.forEach((img) => {
+      img.src = require(`images/${img.dataset.asset}-show.png`)}
+    )
+  }
+
+  wireframeAllImages() {
+    const allImages = this.selectAllImages();
+      allImages.forEach(img => img.src = require(`images/${img.dataset.asset}-wireframe.png`))
+  }
+
+  selectAllImages() {
+    return this.mainTarget.querySelectorAll('img');
   }
 
 }
