@@ -1,9 +1,41 @@
-    <div class="main">
-      <h1> Article Layout #2 </h1>
-      <hr>
-      <img src="<%= asset_path("thumbnail-small.png") %>" class="float-left mr-3" style="width:45vw" alt="">
-       <h2>An Article Worth Your Time </h2>
-       <p> Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quas quod, harum temporibus quos quidem rem, excepturi quia repellat ipsum officiis asperiores omnis officia esse, impedit aliquam ea fuga hic. Doloremque, vel aliquid sequi voluptate consequuntur nesciunt. Eum eaque, nesciunt, molestias nisi esse suscipit, quidem voluptatem inventore iure, incidunt similique repellendus id ducimus. Suscipit cumque qui illum eum hic quaerat facere quidem, optio aliquid quam eius? Animi sapiente ipsum, at debitis.</p>
+<section id="#article_2" class="align-items-end" data-controller="article-3"
+                                                 data-article-3-wireframe-class="wireframe">
+  <h1 class="mr-3">  Article Layout #3 </h1>
+  <div class="custom-control custom-switch mb-3">
+    <input type="checkbox" class="custom-control-input" id="articleLayout3" data-action="change->article-3#toggle">
+    <label class="custom-control-label text-secondary" for="articleLayout3" data-article-3-target="label">See Live</label>
+  </div>
+  <hr>
 
-       <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab sed quaerat eius quis? Totam suscipit itaque molestiae, quia minus laboriosam, ipsam explicabo quaerat, nihil ullam expedita, dolor soluta inventore. Architecto velit maiores quod iusto doloribus culpa eum provident, eius, nulla, magnam nam delectus nobis optio ea deserunt quo cum facilis, nemo similique fugit asperiores suscipit at. Sed voluptatibus a quis, voluptatem quidem, at blanditiis! Dolore quos atque, consectetur, vel exercitationem nam excepturi fugiat officia laborum voluptas animi aut quibusdam cupiditate asperiores maiores. Repudiandae ratione est cum magnam saepe aspernatur non, quae molestiae iste mollitia, modi omnis obcaecati odio, earum numquam?</p>
+  <div class="main pb-5" data-article-3-target="main">
+    <img class='w-50 float-left mr-4' src="<%= asset_path('thumbnail-small-wireframe.png') %>" alt=""
+                                      data-asset="thumbnail-small">
+    <h2> This is a title </h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+  </div>
+
+  <div class="border rounded pt-4 px-4 mb-5" data-code="article_3">
+      <a class="btn btn-secondary btn-sm rounded float-right"
+           tabindex="0" data-trigger="focus"
+           data-toggle="popover" data-placement="top"
+           data-clipboard-target="[data-code='article_3']" data-content="Copied!"> Copy </a>
+
+      <%= markdown('```
+      <div class="main pb-5" data-article-3-target="main">
+        <img class="w-50 float-left mr-4" src="your-image.png" alt=""
+                                          data-asset="thumbnail-small">
+        <h2> This is a title </h2>
+        <p> ... </p>
+
+        <p> ... </p>
+
+        <p> ... </p>
+      </div>
+      ') %>
     </div>
+
+</section>
