@@ -14,13 +14,7 @@
     <p class="text-secondary"> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
   </div>
 
-  <div class="border rounded pt-4 px-4 mb-5" data-code="article_3">
-      <a class="btn btn-secondary btn-sm rounded float-right"
-           tabindex="0" data-trigger="focus"
-           data-toggle="popover" data-placement="top"
-           data-clipboard-target="[data-code='article_3']" data-content="Copied!"> Copy </a>
-
-      <%= markdown('```
+  <%  code_snippet = '```
       <div class="main pb-5" data-article-3-target="main">
         <img class="w-50 float-left mr-4 rounded" src="your-image.png" alt="">
         <h2> This is a title </h2>
@@ -30,7 +24,8 @@
 
         <p class="text-secondary"> ... </p>
       </div>
-      ') %>
-    </div>
+  ' %>
+
+  <%= render partial: 'shared/code_snippet', locals: { section_name: 'article', number: 3, code_snippet: code_snippet } %>
 
 </section>

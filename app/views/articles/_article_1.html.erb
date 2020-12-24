@@ -28,13 +28,8 @@
 
     </div>
 
-    <div class="border rounded pt-4 px-4 mb-5" data-code="article_1">
-      <a class="btn btn-secondary btn-sm rounded float-right"
-           tabindex="0" data-trigger="focus"
-           data-toggle="popover" data-placement="top"
-           data-clipboard-target="[data-code='article_1']" data-content="Copied!"> Copy </a>
 
-      <%= markdown('```
+      <% code_snippet = '```html
         <img class="w-100" src="./your-image-path" alt="your-image">
         <h2 class="mt-5"> This is a header</h2>
           <p> .... </p>
@@ -49,7 +44,9 @@
           </div>
           <button class="btn btn-primary btn-large"> Subscribe </button>
         </div>
-      ') %>
-    </div>
+      ' %>
+
+
+       <%= render partial: 'shared/code_snippet', locals: { section_name: 'article', number: 1, code_snippet: code_snippet } %>
 
 </section>
