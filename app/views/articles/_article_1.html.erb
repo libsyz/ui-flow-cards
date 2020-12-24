@@ -1,49 +1,58 @@
 <section id="#article_1" class="align-items-end" data-controller="article-1"
                                                  data-article-1-wireframe-class="wireframe">
-  <h1 class="mr-3"> Article Layout #1 </h1>
+    <h1 class="mr-3"> Article Layout #1 </h1>
 
-  <div class="custom-control custom-switch mb-3">
-    <input type="checkbox" class="custom-control-input" id="customSwitch1" data-action="change->article-1#toggle">
-    <label class="custom-control-label text-secondary" for="customSwitch1" data-article-1-target="label">See Live</label>
-  </div>
-
-  <hr>
-
-  <div class="main pb-5" data-article-1-target="main">
-    <img class='w-100 rounded' src="<%= asset_path('profile-wireframe.png') %>" alt="" data-asset="profile">
-
-    <h2 class="mt-5"> My incredible Trip to the space desert. </h2>
-    <div class="text-secondary">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quia cupiditate totam quibusdam eaque reiciendis, numquam. Dolorem suscipit culpa, itaque debitis accusamus voluptas corrupti doloremque consectetur beatae maiores magni aut nostrum officiis ducimus dolore! Dignissimos, maxime. Soluta harum aspernatur fugit incidunt voluptate aperiam dignissimos, doloribus quo vitae voluptatibus praesentium voluptatum ducimus nam itaque nostrum ut in odio molestias cupiditate perspiciatis!</p>
-
-      <p> Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ipsum eaque dolorem mollitia dolore. Nihil ea voluptatibus veritatis voluptatem debitis cumque architecto excepturi, labore enim ipsa fugit, amet voluptate quia ab unde odit repudiandae ullam nemo blanditiis! Numquam, voluptatibus esse mollitia ut, iure magni sunt sint debitis impedit. Odio assumenda aliquam, consequuntur molestias quod dolore voluptas sint sequi iure ab architecto?</p>
+    <div class="custom-control custom-switch mb-3">
+      <input type="checkbox" class="custom-control-input" id="customSwitch1" data-action="change->article-1#toggle">
+      <label class="custom-control-label text-secondary" for="customSwitch1" data-article-1-target="label">See Live</label>
     </div>
-    <div class="d-flex justify-content-between align-items-middle">
-      <div class="author d-flex align-items-center">
-        <img src="<%= asset_path('avatar-wireframe.png') %>" style="height: 40px; border-radius: 50%;" alt="avatar"
-        data-article-1-target="avatarWireframe" data-asset="avatar">
-        <div class="ml-3 author-info">
-          <p class="m-0"> <small> Miguel </small> </p>
-          <p class="text-secondary m-0"> <small> 1 month ago </small> </p>
-        </div>
+
+    <hr>
+
+    <div class="main pb-5" data-article-1-target="main">
+      <img class='w-100 rounded' src="<%= asset_path('profile-wireframe.png') %>" alt="" data-asset="profile">
+
+      <h2 class="mt-5"> My incredible Trip to the space desert. </h2>
+      <div class="text-secondary">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quia cupiditate totam quibusdam eaque reiciendis, numquam. Dolorem suscipit culpa, itaque debitis accusamus voluptas corrupti doloremque consectetur beatae maiores magni aut nostrum officiis ducimus dolore! Dignissimos, maxime. Soluta harum aspernatur fugit incidunt voluptate aperiam dignissimos, doloribus quo vitae voluptatibus praesentium voluptatum ducimus nam itaque nostrum ut in odio molestias cupiditate perspiciatis!</p>
+
+        <p> Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Ipsum eaque dolorem mollitia dolore. Nihil ea voluptatibus veritatis voluptatem debitis cumque architecto excepturi, labore enim ipsa fugit, amet voluptate quia ab unde odit repudiandae ullam nemo blanditiis! Numquam, voluptatibus esse mollitia ut, iure magni sunt sint debitis impedit. Odio assumenda aliquam, consequuntur molestias quod dolore voluptas sint sequi iure ab architecto?</p>
       </div>
-      <button class="btn btn-primary btn-large"
-               data-article-1-target="button"> Subscribe </button>
-    </div>
+      <div class="d-flex justify-content-between align-items-middle">
+        <div class="author d-flex align-items-center">
+          <img src="<%= asset_path('avatar-wireframe.png') %>" style="height: 40px; border-radius: 50%;" alt="avatar"
+          data-article-1-target="avatarWireframe" data-asset="avatar">
+          <div class="ml-3 author-info">
+            <p class="m-0"> <small> Elliot </small> </p>
+            <p class="text-secondary m-0"> <small> 1 month ago </small> </p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-large"
+                 data-article-1-target="button"> Subscribe </button>
+      </div>
 
     </div>
-    <div class="code mt-5 pt-3 mb-5 border rounded">
-      <code>
-       <pre>
-         &lt;img class='w-100' src="./your-image-path" alt=""&gt;
-         &lt;h2 class="mt-5"&gt;`This is a header&lt;/h2&gt;`
-           &lt;p&gt; ....&lt;/p&gt;
-           &lt;p&gt; .... &lt;/p&gt;
-         &lt;div class="author d-flex justify-content-between align-items-middle"&gt;
-           &lt;img src="&lt;%= asset_path('avatar.png') %&gt;" style="height: 40px" alt="avatar"&gt;
-           &lt;button class="btn btn-primary btn-large"&gt; Subscribe &lt;/button&gt;
-         &lt;/div&gt;
-       </pre>
-     </code>
-   </div>
+
+    <div class="border rounded pt-4 px-4 mb-5">
+      <a class="btn btn-secondary btn-sm rounded float-right"
+           tabindex="0" data-trigger="focus"
+           data-toggle="popover" data-placement="top" data-content="Copied!"> Copy </a>
+      <%= markdown('```
+        <img class="w-100" src="./your-image-path" alt="your-image">
+        <h2 class="mt-5"> This is a header</h2>
+          <p> .... </p>
+          <p> .... </p>
+        <div class="d-flex justify-content-between align-items-middle">
+          <div class="d-flex align-items-center">
+            <img src="an-avatar.png" style="height: 40px; border-radius: 50%;" alt="avatar">
+            <div class="ml-3">
+              <p class="m-0"> <small> Elliot </small> </p>
+              <p class="text-secondary m-0"> <small> 1 month ago </small> </p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-large"> Subscribe </button>
+        </div>
+      ') %>
+    </div>
+
 </section>
