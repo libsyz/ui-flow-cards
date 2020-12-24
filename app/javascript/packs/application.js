@@ -24,12 +24,14 @@ require("channels")
 
 // External imports
 import "bootstrap";
-
+import ClipboardJS from 'clipboard/dist/clipboard.min.js';
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
+
+  new ClipboardJS('[data-clipboard-target]');
+
   $(function () {
     $('[data-toggle="popover"]').popover({
       trigger: 'focus'
