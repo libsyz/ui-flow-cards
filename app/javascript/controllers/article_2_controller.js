@@ -6,19 +6,20 @@
 // <div data-controller="hello">
 //   <h1 data-target="hello.output"></h1>
 // </div>
-
+import { toggle } from "./article_utils.js"
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = [ "image" ]
-  //active = false;
+  static targets = [ "main", "label" ]
+  static classes = [ "wireframe" ]
+  active = false;
 
   connect() {
-    console.log("I am connected too!");
+    this.mainTarget.classList.add(this.wireframeClass);
   }
 
   toggle() {
-    this.imageTarget.src = require('images/profile-show.png');
+    toggle(this);
   }
 
 }

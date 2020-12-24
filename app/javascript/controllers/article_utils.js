@@ -1,4 +1,5 @@
   const toggle = (controller) => {
+
     if (controller.active == false) {
       controller.active = true;
       controller.mainTarget.classList.remove('wireframe');
