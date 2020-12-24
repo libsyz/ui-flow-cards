@@ -1,11 +1,7 @@
 <section id="#article_2" class="align-items-end" data-controller="article-2"
                                                  data-article-2-wireframe-class="wireframe">
-  <h1 class="mr-3">  Article Layout #2 </h1>
-  <div class="custom-control custom-switch mb-3">
-    <input type="checkbox" class="custom-control-input" id="articleLayout2" data-action="change->article-2#toggle">
-    <label class="custom-control-label text-secondary" for="articleLayout2" data-article-2-target="label">See Live</label>
-  </div>
-  <hr>
+
+ <%= render partial: 'shared/section', locals: { section_name: "article", number: 2 } %>
 
 
   <div class="main pb-5" data-article-2-target="main">

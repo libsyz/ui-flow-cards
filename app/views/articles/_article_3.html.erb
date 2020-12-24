@@ -1,21 +1,17 @@
 <section id="#article_2" class="align-items-end" data-controller="article-3"
                                                  data-article-3-wireframe-class="wireframe">
-  <h1 class="mr-3">  Article Layout #3 </h1>
-  <div class="custom-control custom-switch mb-3">
-    <input type="checkbox" class="custom-control-input" id="articleLayout3" data-action="change->article-3#toggle">
-    <label class="custom-control-label text-secondary" for="articleLayout3" data-article-3-target="label">See Live</label>
-  </div>
-  <hr>
+
+ <%= render partial: 'shared/section', locals: { section_name: "article", number: 3 } %>
 
   <div class="main pb-5" data-article-3-target="main">
-    <img class='w-50 float-left mr-4' src="<%= asset_path('thumbnail-small-wireframe.png') %>" alt=""
+    <img class='w-50 float-left mr-4 rounded' src="<%= asset_path('thumbnail-small-wireframe.png') %>" alt=""
                                       data-asset="thumbnail-small">
     <h2> This is a title </h2>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+    <p class="text-secondary"> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+    <p class="text-secondary"> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
+    <p class="text-secondary"> Lorem ipsum dolor sit amet consectetur adipisicing, elit. Id unde quae officia autem nulla atque sint. Labore, numquam, unde. Quis reprehenderit voluptatibus assumenda, aut eveniet tempore cupiditate consequuntur alias. Doloribus quisquam tenetur laborum eligendi accusamus excepturi dolores inventore blanditiis dolor labore. Asperiores voluptates vel quaerat, impedit corporis animi harum, ratione. </p>
   </div>
 
   <div class="border rounded pt-4 px-4 mb-5" data-code="article_3">
@@ -26,14 +22,13 @@
 
       <%= markdown('```
       <div class="main pb-5" data-article-3-target="main">
-        <img class="w-50 float-left mr-4" src="your-image.png" alt=""
-                                          data-asset="thumbnail-small">
+        <img class="w-50 float-left mr-4 rounded" src="your-image.png" alt="">
         <h2> This is a title </h2>
-        <p> ... </p>
+        <p class="text-secondary"> ... </p>
 
-        <p> ... </p>
+        <p class="text-secondary"> ... </p>
 
-        <p> ... </p>
+        <p class="text-secondary"> ... </p>
       </div>
       ') %>
     </div>

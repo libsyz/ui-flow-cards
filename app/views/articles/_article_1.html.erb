@@ -1,13 +1,8 @@
 <section id="#article_1" class="align-items-end" data-controller="article-1"
                                                  data-article-1-wireframe-class="wireframe">
-    <h1 class="mr-3"> Article Layout #1 </h1>
 
-    <div class="custom-control custom-switch mb-3">
-      <input type="checkbox" class="custom-control-input" id="customSwitch1" data-action="change->article-1#toggle">
-      <label class="custom-control-label text-secondary" for="customSwitch1" data-article-1-target="label">See Live</label>
-    </div>
+    <%= render partial: 'shared/section', locals: { section_name: "article", number: 1 } %>
 
-    <hr>
 
     <div class="main pb-5" data-article-1-target="main">
       <img class='w-100 rounded' src="<%= asset_path('profile-wireframe.png') %>" alt="" data-asset="profile">
