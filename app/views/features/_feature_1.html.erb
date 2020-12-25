@@ -1,0 +1,84 @@
+
+<section id="feature_1" class="align-items-end" data-controller="features--feature-1"
+                                                data-features--feature-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "feature", number: 1 } %>
+
+   <!-- Layout -->
+
+    <div class="main pb-5" data-features--feature-1-target="main">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="w-100 h-100 rounded" style="object-fit: cover;" src="<%= asset_path('feature-product-vertical-wireframe.png') %>" alt="horizontal" data-asset='feature-product-vertical'>
+        </div>
+        <div class="col-sm-8 text-center">
+          <h2 class="mb-5"> Amazing Product Features </h2>
+          <div class="row text-center">
+            <div class="col-sm-6">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-1">
+                <h2> Fast </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-2-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-2">
+                <h2> Reliable </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-5">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-3-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-3">
+                <h2> Cool </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-4-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-4">
+                <h2> Eco Friendly </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="w-100 h-100 rounded" src="your-image.png" alt="horizontal">
+        </div>
+        <div class="col-sm-8 text-center">
+          <h2 class="mb-5"> Amazing Product Features </h2>
+          <div class="row text-center">
+            <div class="col-sm-6">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Fast </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Reliable </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-5">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Cool </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Eco Friendly </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>' %>
+
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'feature', number: 1, code_snippet: code_snippet} %>
+
+</section>
