@@ -1,0 +1,66 @@
+
+<section id="form_1" class="align-items-end" data-controller="forms--form-1"
+                                                data-forms--form-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "form", number: 1 } %>
+
+    <div class="main pb-5 text-center" data-forms--form-1-target="main">
+      <h2 class="py-5"> Forms are hard, but we can help you.</h2>
+      <div class="row g-3 my-4">
+        <div class="col-sm-5 text-left">
+          <small class="text-secondary mb-1">Select your Pick Up Location</small>
+          <input type="text" class="form-control" list="datalistOptions"
+                 placeholder="San Francisco" aria-label="City">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        <div class="col-sm-5 text-left">
+          <small class="text-secondary mb-1">When are you available to pick it up?</small>
+          <input type="date" class="form-control" placeholder="What date works for you?" aria-label="date">
+        </div>
+        <div class="col-sm-2 align-self-end">
+          <input type="submit" class="form-control btn btn-primary" placeholder="Zip" aria-label="Zip">
+        </div>
+      </div>
+      <p class="text-secondary"> Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Unde numquam ut earum reiciendis, expedita voluptas cumque neque, quasi illo illum quaerat velit molestiae totam aliquid itaque doloribus rem, voluptate, odit. Hic voluptate, dignissimos tempora cumque? </p>
+    </div>
+
+    <% code_snippet = '```html
+    <div class="main pb-5 text-center">
+      <h2 class="py-5"> Forms are hard, but we can help you.</h2>
+      <div class="row g-3 my-4">
+        <div class="col-sm-5 text-left">
+          <small class="text-secondary mb-1">Select your Pick Up Location</small>
+          <input type="text" class="form-control" list="datalistOptions"
+                 placeholder="San Francisco" aria-label="City">
+          <datalist id="datalistOptions">
+            <option value="San Francisco">
+            <option value="New York">
+            <option value="Seattle">
+            <option value="Los Angeles">
+            <option value="Chicago">
+          </datalist>
+        </div>
+        <div class="col-sm-5 text-left">
+          <small class="text-secondary mb-1">When are you available to pick it up?</small>
+          <input type="date" class="form-control" aria-label="date">
+        </div>
+        <div class="col-sm-2 align-self-end">
+          <input type="submit" class="form-control btn btn-primary" placeholder="Zip" aria-label="Zip">
+        </div>
+      </div>
+      <p class="text-secondary"> ... </p>
+    </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'form', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
