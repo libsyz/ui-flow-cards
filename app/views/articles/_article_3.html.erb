@@ -1,9 +1,9 @@
-<section id="#article_2" class="align-items-end" data-controller="article-3"
-                                                 data-article-3-wireframe-class="wireframe">
+<section id="#article_2" class="align-items-end" data-controller="articles--article-3"
+                                                 data-articles--article-3-wireframe-class="wireframe">
 
  <%= render partial: 'shared/section', locals: { section_name: "article", number: 3 } %>
 
-  <div class="main pb-5" data-article-3-target="main">
+  <div class="main pb-5" data-articles--article-3-target="main">
     <img class='w-50 float-left mr-4 rounded' src="<%= asset_path('thumbnail-small-wireframe.png') %>" alt=""
                                       data-asset="thumbnail-small">
     <h2> This is a title </h2>
@@ -15,7 +15,7 @@
   </div>
 
   <%  code_snippet = '```
-      <div class="main pb-5" data-article-3-target="main">
+      <div class="main pb-5">
         <img class="w-50 float-left mr-4 rounded" src="your-image.png" alt="">
         <h2> This is a title </h2>
         <p class="text-secondary"> ... </p>

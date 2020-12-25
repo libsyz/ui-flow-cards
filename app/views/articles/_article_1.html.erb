@@ -1,10 +1,9 @@
-<section id="#article_1" class="align-items-end" data-controller="article-1"
-                                                 data-article-1-wireframe-class="wireframe">
+<section id="#article_1" class="align-items-end" data-controller="articles--article-1"
+                                                 data-articles--article-1-wireframe-class="wireframe">
 
     <%= render partial: 'shared/section', locals: { section_name: "article", number: 1 } %>
 
-
-    <div class="main pb-5" data-article-1-target="main">
+    <div class="main pb-5" data-articles--article-1-target="main">
       <img class='w-100 rounded' src="<%= asset_path('profile-wireframe.png') %>" alt="" data-asset="profile">
 
       <h2 class="mt-5"> My incredible Trip to the space desert. </h2>
@@ -16,14 +15,14 @@
       <div class="d-flex justify-content-between align-items-middle">
         <div class="author d-flex align-items-center">
           <img src="<%= asset_path('avatar-wireframe.png') %>" style="height: 40px; border-radius: 50%;" alt="avatar"
-          data-article-1-target="avatarWireframe" data-asset="avatar">
+          data-articles--article-1-target="avatarWireframe" data-asset="avatar">
           <div class="ml-3 author-info">
             <p class="m-0"> <small> Elliot </small> </p>
             <p class="text-secondary m-0"> <small> 1 month ago </small> </p>
           </div>
         </div>
         <button class="btn btn-primary btn-large"
-                 data-article-1-target="button"> Subscribe </button>
+                 data-articles--article-1-target="button"> Subscribe </button>
       </div>
 
     </div>

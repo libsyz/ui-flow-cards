@@ -12,6 +12,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="root d-flex">
+      <div class="sidebar pt-5 px-3 bg-dark" style="position: sticky; top: 0px; height: 100vh;">
+        <p><a href="#"> Articles</a></p>
+        <p><a href="#"> Product Features </a></p>
+        <p><a href="#"> Dashboards </a></p>
+        <p><a href="#"> E-Commerce </a></p>
+        <p><a href="#"> Features </a></p>
+        <p><a href="#"> Forms </a></p>
+        <p><a href="#"> Gallery </a></p>
+        <p><a href="#"> Login </a></p>
+        <p><a href="#"> User Profile </a></p>
+        <p><a href="#"> Promo </a></p>
+        <p><a href="#"> Search </a></p>
+        <p><a href="#"> Testimonial </a></p>
+        <p><a href="#"> Settings </a></p>
+      </div>
+      <div class="container pt-5">
+          <h1>This is UI Flow Bro</h1>
+          <p class="text-secondary"> Simple layouts made with bootstrap to accelerate your front end workflow.</p>
+          <%= yield %>
+      </div>
+
   </body>
 </html>
