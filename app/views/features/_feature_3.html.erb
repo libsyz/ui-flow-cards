@@ -6,15 +6,120 @@
 
     <div class="main pb-5" data-features--feature-3-target="main">
       <!-- Layout Goes here -->
-    </div>
+      <div class="row">
+        <div class="col-sm-3 text-center">
+          <div class="features h-100 d-flex flex-column justify-content-around">
+            <div class="feature mb-5">
+              <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-1">
+              <h2> Fast </h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+            </div>
+            <div class="feature mb-5">
+              <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-2-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-2">
+              <h2> Reliable </h2>
+              <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+            <div class="marvel-device iphone-x">
+            <div class="notch">
+              <div class="camera"></div>
+              <div class="speaker"></div>
+            </div>
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="bottom-bar"></div>
+            <div class="volume"></div>
+            <div class="overflow">
+              <div class="shadow shadow--tr"></div>
+              <div class="shadow shadow--tl"></div>
+              <div class="shadow shadow--br"></div>
+              <div class="shadow shadow--bl"></div>
+            </div>
+            <div class="inner-shadow"></div>
+            <div class="screen bg-primary"
+                 data-features--feature-3-target="screen">
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="features h-100 d-flex flex-column justify-content-around">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-3-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-3">
+                <h2> Cool </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-4-wireframe.png') %>" alt="Generic placeholder image" width="140" height="140" data-asset="feature-small-4">
+                <h2> Eco Friendly </h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ullam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <% code_snippet = '```html
-      code snippet goes here
+      <!-- This layout uses devices.css from marvelapp
+      https://github.com/marvelapp/devices.css/tree/master/assets,
+      go get it from there if you want this frame in your project  -->
+
+      <div class="row">
+        <div class="col-sm-3 text-center">
+          <div class="features h-100 d-flex flex-column justify-content-around">
+            <div class="feature mb-5">
+              <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+              <h2> Fast </h2>
+              <p class="text-secondary"> ... </p>
+            </div>
+            <div class="feature mb-5">
+              <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+              <h2> Reliable </h2>
+              <p class="text-secondary"> ... </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+            <div class="marvel-device iphone-x">
+            <div class="notch">
+              <div class="camera"></div>
+              <div class="speaker"></div>
+            </div>
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="bottom-bar"></div>
+            <div class="volume"></div>
+            <div class="overflow">
+              <div class="shadow shadow--tr"></div>
+              <div class="shadow shadow--tl"></div>
+              <div class="shadow shadow--br"></div>
+              <div class="shadow shadow--bl"></div>
+            </div>
+            <div class="inner-shadow"></div>
+            <div class="screen bg-primary">
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-3 text-center">
+            <div class="features h-100 d-flex flex-column justify-content-around">
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Cool </h2>
+                <p class="text-secondary"> ... </p>
+              </div>
+              <div class="feature mb-5">
+                <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="140" height="140">
+                <h2> Eco Friendly </h2>
+                <p class="text-secondary"> ... </p>
+              </div>
+            </div>
+          </div>
+        </div>
       ' %>
 
     <!-- Code Snippet below -->
       <%= render partial: 'shared/code_snippet', locals: { section_name: 'feature', number: 3, code_snippet: code_snippet} %>
 
-    <!--  -->
 
 </section>
