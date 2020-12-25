@@ -5,35 +5,58 @@ data-features--feature-2-wireframe-class="wireframe">
 <%= render partial: 'shared/section', locals: { section_name: "feature", number: 2 } %>
 
 <div class="main pb-5" data-features--feature-2-target="main">
-  <img class="w-100 mb-5" src="<%= asset_path("feature-hero-wireframe.png") %>"
+  <img class="w-100 mb-5 rounded" src="<%= asset_path("feature-hero-wireframe.png") %>"
   data-asset="feature-hero">
 
-    <div class="features d-flex justify-items-around">
-      <div class="feature mb-5 mr-5 text-center">
-        <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-1">
-        <h2> Fast </h2>
-        <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-      </div>
-      <div class="feature mb-5 mr-5 text-center">
-        <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-2-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-2">
-        <h2> Reliable </h2>
-        <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-      </div>
-      <div class="feature mb-5 mr-5 text-center">
-        <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-3-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-3">
-        <h2> Cool </h2>
-        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-      </div>
-      <div class="feature mb-5 text-center">
-        <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-4-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-4">
-        <h2> Eco Friendly </h2>
-        <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-      </div>
+  <div class="features d-flex justify-items-around">
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-1">
+      <h2> Fast </h2>
+      <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-2-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-2">
+      <h2> Reliable </h2>
+      <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    </div>
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-3-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-3">
+      <h2> Cool </h2>
+      <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="feature mb-5 text-center">
+      <img class="rounded-circle mb-3" src="<%= asset_path('feature-small-4-wireframe.png') %>" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-4">
+      <h2> Eco Friendly </h2>
+      <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
     </div>
   </div>
+</div>
 
   <% code_snippet = '```html
-  <img class="w-100" src="your-image" >
+  <img class="w-100 mb-5 rounded" src="your-image" >
+
+  <div class="features d-flex justify-items-around">
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-1">
+      <h2> Fast </h2>
+      <p class="text-secondary"> ... </p>
+    </div>
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-2">
+      <h2> Reliable </h2>
+      <p class="text-secondary"> ... </p>
+    </div>
+    <div class="feature mb-5 mr-5 text-center">
+      <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-3">
+      <h2> Cool </h2>
+      <p class="text-secondary"> ... </p>
+    </div>
+    <div class="feature mb-5 text-center">
+      <img class="rounded-circle mb-3" src="your-image.png" alt="Generic placeholder image" width="90" height="90" data-asset="feature-small-4">
+      <h2> Eco Friendly </h2>
+      <p class="text-secondary"> ... </p>
+    </div>
+  </div>
   ' %>
 
   <!-- Code Snippet below -->
