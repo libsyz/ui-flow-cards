@@ -1,5 +1,5 @@
-require 'pry-byebug'
-class LayoutGenerator < Rails::Generators::NamedBase
+
+class LayoutGenerator < Rails::Generators::Base
   source_root File.expand_path('templates', __dir__)
   class_option :section, type: :string
   class_option :number, type: :string
