@@ -1,0 +1,11 @@
+Description:
+    This generator will create a prefilled layout partial under the right folder and its corresponding stimulus controller
+
+Example:
+    rails generate layout LAYOUT_NAME LAYOUT_NUMBER
+
+    This will create:
+        given we did
+        rails generate layout features 3
+        /app/javascript/controllers/features/feature_3_controller.js
+        /app/views/features/_feature_3.html.erb
