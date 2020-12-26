@@ -30,12 +30,12 @@ export default class extends Controller {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v9',
-      center: [ -0.077, 51.533 ],
+      center: [ 103.830802, 1.305694 ],
       zoom: 12
      });
 
     new mapboxgl.Marker()
-      .setLngLat([ -0.077, 51.533 ])
+      .setLngLat([ 103.830802, 1.305694 ])
       .addTo(map);
   }
 
