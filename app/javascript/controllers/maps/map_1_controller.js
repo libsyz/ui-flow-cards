@@ -7,20 +7,36 @@
 //   <h1 data-target="hello.output"></h1>
 // </div>
 
-import { Controller } from "stimulus"
-import { toggle } from './../articles/article_utils.js'
+import { Controller } from "stimulus";
+import mapboxgl from 'mapbox-gl';
+import { toggle } from './map_utils.js';
 
 export default class extends Controller {
-  static targets = [ "main", "label" ]
+  static targets = [ "main", "label", "map", "mapWireframe" ]
   static classes = [ "wireframe" ]
   active = false;
 
   connect() {
     this.mainTarget.classList.add(this.wireframeClass);
+    this.drawMap();
   }
 
   toggle() {
     toggle(this);
+  }
+
+  drawMap() {
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGlic3l6IiwiYSI6ImNqc3c2ejNkazAzYmg0M3BpYnpucGk0d2QifQ.-35Gavs7U2KoVJAXHDvHNA';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v9',
+      center: [ -0.077, 51.533 ],
+      zoom: 12
+     });
+
+    new mapboxgl.Marker()
+      .setLngLat([ -0.077, 51.533 ])
+      .addTo(map);
   }
 
 }
