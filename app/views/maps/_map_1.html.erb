@@ -1,0 +1,30 @@
+
+<section id="map_1" class="align-items-end" data-controller="maps--map-1"
+                                                data-maps--map-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "map", number: 1 } %>
+
+    <div class="main pb-5" data-maps--map-1-target="main">
+      <div class="text-center">
+        <img src=" <%= asset_path('map-wireframe.png') %>" class="rounded-circle" height='150px' width='150px' alt="">
+        <h2 class="my-3"> Come Visit us! </h2>
+        <p class="text-secondary w-50 m-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem possimus voluptate dignissimos optio deleniti nulla error</p>
+        <form class="form-inline">
+          <div class="mx-auto my-3">
+            <input type="text" class="form-control mr-3" placeholder="alan@turing.com">
+            <input type="submit" value="Contact" class="form-control btn btn-primary">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'map', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
