@@ -16,13 +16,13 @@
   const showAllImages = (controller) => {
   const allImages = selectAllImages(controller);
     allImages.forEach((img) => {
-      img.src = require(`images/${img.dataset.asset}-show.png`)}
+      img.src = require(`./${img.dataset.asset}-show.png`)}
     )
   }
 
   const wireframeAllImages = (controller) => {
     const allImages = selectAllImages(controller);
-      allImages.forEach(img => img.src = require(`images/${img.dataset.asset}-wireframe.png`))
+      allImages.forEach(img => img.src = require(`./${img.dataset.asset}-wireframe.png`))
   }
 
   const selectAllImages = (controller) => {
