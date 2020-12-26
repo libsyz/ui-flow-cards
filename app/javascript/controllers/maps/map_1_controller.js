@@ -26,7 +26,7 @@ export default class extends Controller {
   }
 
   drawMap() {
-    mapboxgl.accessToken = 'pk.eyJ1IjoibGlic3l6IiwiYSI6ImNqc3c2ejNkazAzYmg0M3BpYnpucGk0d2QifQ.-35Gavs7U2KoVJAXHDvHNA';
+    mapboxgl.accessToken = 'pk.eyJ1IjoibGlic3l6IiwiYSI6ImNrajVwcHBqNTA1bzcyeXA1eGQwb2pxdGcifQ.asgTo8KQ1d8SrnT_y9LrFQ'
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v9',

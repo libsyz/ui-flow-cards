@@ -5,15 +5,15 @@
    <%= render partial: 'shared/section', locals: { section_name: "map", number: 1 } %>
 
     <div class="main pb-5" data-maps--map-1-target="main">
-      <div class="text-center">
+      <div class="d-flex flex-column align-items-center text-center">
         <img src=" <%= asset_path('map-wireframe.png') %>" class="rounded-circle" height='300px' width='300px'     alt="" data-maps--map-1-target="mapWireframe">
         <div id="map" class="rounded-circle m-auto d-none"
              data-maps--map-1-target="map"
              style="height: 300px; width: 300px"></div>
         <h2 class="my-3"> Come Visit us! </h2>
-        <p class="text-secondary w-50 m-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem possimus voluptate dignissimos optio deleniti nulla error</p>
+        <p class="text-secondary w-50"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem possimus voluptate dignissimos optio deleniti nulla error</p>
         <form class="form-inline">
-          <div class="mx-auto my-3">
+          <div class="my-3">
             <input type="text" class="form-control mr-3" placeholder="alan@turing.com">
             <input type="submit" value="Contact" class="form-control btn btn-primary">
           </div>
@@ -22,7 +22,47 @@
     </div>
 
     <% code_snippet = '```html
-      code snippet goes here
+
+      <!--
+
+      The map is diplayed with mapbox.gl
+      If you want to use the same map, get a free account at mapbox
+      and add their javascript library to your project
+
+      -->
+
+      <div class="d-flex flex-column align-items-center text-center">
+        <div id="map" class="rounded-circle m-auto d-none"
+             data-maps--map-1-target="map"
+             style="height: 300px; width: 300px"></div>
+        <h2 class="my-3"> Come Visit us! </h2>
+        <p class="text-secondary w-50"> ... </p>
+        <form class="form-inline">
+          <div class="my-3">
+            <input type="text" class="form-control mr-3" placeholder="alan@turing.com">
+            <input type="submit" value="Contact" class="form-control btn btn-primary">
+          </div>
+        </form>
+      </div>
+
+      <script>
+
+      // Make sure mapboxgl library is imported
+
+      mapboxgl.accessToken = \'your token\'
+
+      const map = new mapboxgl.Map({
+        container: \'map\',
+        style: \'mapbox://styles/mapbox/streets-v9\',
+        center: [ 103.830802, 1.305694 ],
+        zoom: 12
+      });
+
+      new mapboxgl.Marker()
+                  .setLngLat([ 103.830802, 1.305694 ])
+                  .addTo(map);
+
+      </script>
       ' %>
 
     <!-- Code Snippet below -->
