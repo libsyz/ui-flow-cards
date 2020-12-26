@@ -1,0 +1,104 @@
+
+<section id="form_3" class="align-items-end" data-controller="forms--form-3"
+                                                data-forms--form-3-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "form", number: 3 } %>
+
+    <div class="main pb-5" data-forms--form-3-target="main">
+        <div class="bg-secondary mt-5 d-flex w-100 justify-content-between align-items-center" style="height:5px">
+          <div class="bg-primary rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="align-middle">1</p>  </div>
+          <div class="bg-dark rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="text-secondary">2</p> </div>
+          <div class="bg-dark rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="text-secondary">3</p> </div>
+        </div>
+        <form action="" class="my-5">
+        <h2 class="py-3"> Let's get your air conditioner serviced! </h2>
+          <div class="form-group">
+            <label for="input1"> Your Air Conditioner Model </label>
+            <input type="text" id="input1" placeholder="Daikin RKS50GVMG/FTKS50GVMG"class="form-control">
+          </div>
+          <div class="form-group">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="input2"> Your Name </label>
+                <input type="text" id="input2" class="form-control" placeholder="Jonathan">
+              </div>
+              <div class="col-sm-6">
+                <label for="input3"> Your Surname </label>
+                <input type="text" id="input3" class="form-control" placeholder="Buchanan">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row g-3">
+              <div class="col-sm-3">
+                <label for="input4"> Your Phone Number </label>
+                <input type="tel" id="input5" class="form-control" placeholder="+65 1234 5678">
+              </div>
+              <div class="col-sm-3">
+                <label for="input5"> Your Building Unit Number </label>
+                <input type="text" id="input5" class="form-control" placeholder="#04-08">
+              </div>
+              <div class="col">
+                <label for="input6"> Your Full Address </label>
+                <input type="text" id="input6" class="form-control" placeholder="Jurong East, Clover Road 67">
+              </div>
+            </div>
+          </div>
+          <label for="input7"> Anything else you need us to know </label>
+          <input type="text" class="form-control">
+          <input type="submit" Value="Next" class="btn btn-primary float-right my-3">
+        </form>
+    </div>
+
+    <% code_snippet = '```html
+        <div class="bg-secondary mt-5 d-flex w-100 justify-content-between align-items-center" style="height:5px">
+          <div class="bg-primary rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="align-middle">1</p>  </div>
+          <div class="bg-dark rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="text-secondary">2</p> </div>
+          <div class="bg-dark rounded-circle text-center" style="height: 50px; width: 50px; line-height: 50px"> <p class="text-secondary">3</p> </div>
+        </div>
+        <form action="" class="my-5">
+        <h2 class="py-3"> Let\'s get your air conditioner serviced! </h2>
+          <div class="form-group">
+            <label for="input1"> Your Air Conditioner Model </label>
+            <input type="text" id="input1" placeholder="Daikin RKS50GVMG/FTKS50GVMG"class="form-control">
+          </div>
+          <div class="form-group">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="input2"> Your Name </label>
+                <input type="text" id="input2" class="form-control" placeholder="Jonathan">
+              </div>
+              <div class="col-sm-6">
+                <label for="input3"> Your Surname </label>
+                <input type="text" id="input3" class="form-control" placeholder="Buchanan">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row g-3">
+              <div class="col-sm-3">
+                <label for="input4"> Your Phone Number </label>
+                <input type="tel" id="input5" class="form-control" placeholder="+65 1234 5678">
+              </div>
+              <div class="col-sm-3">
+                <label for="input5"> Your Building Unit Number </label>
+                <input type="text" id="input5" class="form-control" placeholder="#04-08">
+              </div>
+              <div class="col">
+                <label for="input6"> Your Full Address </label>
+                <input type="text" id="input6" class="form-control" placeholder="Jurong East, Clover Road 67">
+              </div>
+            </div>
+          </div>
+          <label for="input7"> Anything else you need us to know </label>
+          <input type="text" class="form-control">
+          <input type="submit" Value="Next" class="btn btn-primary float-right my-3">
+        </form>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'form', number: 3, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
