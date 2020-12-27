@@ -19,17 +19,43 @@
     </div>
 
     <% code_snippet = '```html
-        <img src="your-image.png" height="300px" width="100%"
-             style="object-fit: cover;" alt="" data-maps--map-3-target="mapWireframe">
-        <div id="map-3" class="d-none w-100" style="height: 300px;" data-maps--map-3-target="map"></div>
+        <!--
+
+        The map is diplayed with mapbox.gl
+        If you want to use the same map, get a free account at mapbox
+        and add their javascript library to your project
+
+        -->
+
+        <div id="map-3" class="d-none w-100" style="height: 300px;"></div>
         <div class="contact-us d-flex flex-column align-items-center justify-content-between
                     mx-auto w-50 my-5 text-center">
           <h2 class="mb-4"> But you can contact us if you don\'t want to come. </h2>
           <p class="text-secondary"> We have cookies, plenty of coffee and a genuine willingness to help you. You should give us a try</p>
           <form class="form-inline">
-            <input type="text" placeholder="getdown@getdown.gd"class="form-control mr-3"> <input type="submit" value="Get in Touch" class="btn btn-primary">
+            <input type="text" placeholder="getdown@getdown.gd" class="form-control mr-3">
+            <input type="submit"  value="Get in Touch" class="btn btn-primary">
           </form>
         </div>
+
+     <script>
+
+      // Make sure mapboxgl library is imported
+
+      mapboxgl.accessToken = \'your token\'
+
+      const map = new mapboxgl.Map({
+        container: \'map\',
+        style: \'mapbox://styles/mapbox/streets-v9\',
+        center: [ 103.830802, 1.305694 ],
+        zoom: 12
+      });
+
+      new mapboxgl.Marker()
+                  .setLngLat([ 103.830802, 1.305694 ])
+                  .addTo(map);
+
+      </script>
       ' %>
 
     <!-- Code Snippet below -->
