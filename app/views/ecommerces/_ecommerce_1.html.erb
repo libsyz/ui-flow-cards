@@ -1,0 +1,20 @@
+
+<section id="ecommerce_1" class="align-items-end" data-controller="ecommerces--ecommerce-1"
+                                                  data-ecommerces--ecommerce-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "ecommerce", number: 1 } %>
+
+    <div class="main pb-5" data-ecommerces--ecommerce-1-target="main">
+      <!-- Layout Goes here -->
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'ecommerce', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
