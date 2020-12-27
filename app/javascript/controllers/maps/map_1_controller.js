@@ -8,21 +8,23 @@
 // </div>
 
 import { Controller } from "stimulus";
-import mapboxgl from 'mapbox-gl';
-import { toggle } from './map_utils.js';
+import { toggle, drawMap } from './map_utils.js';
 
 export default class extends Controller {
   static targets = [ "main", "label", "map", "mapWireframe" ]
   static classes = [ "wireframe" ]
   active = false;
+  mapDrawn = false;
 
   connect() {
     this.mainTarget.classList.add(this.wireframeClass);
-    this.drawMap();
   }
 
   toggle() {
     toggle(this);
+    if (this.mapDrawn == false) {
+      drawMap(this);
+    }
   }
 
   drawMap() {
