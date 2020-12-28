@@ -5,7 +5,41 @@
    <%= render partial: 'shared/section', locals: { section_name: "ecommerce", number: 1 } %>
 
     <div class="main pb-5" data-ecommerces--ecommerce-1-target="main">
-      <!-- Layout Goes here -->
+      <div class="product-main d-flex mb-5">
+        <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="" class="product-thumbnail mr-4 w-100">
+        <div class="product-infos w-100">
+          <h2> Check out this amazing product </h2>
+          <p class="text-secondary"> You should check out the features of this thing, they're unbelievable!</p>
+          <p class="text-secondary"> 34 SGD </p>
+          <button class="float-right btn btn-primary"> Add to Cart </button>
+        </div>
+      </div>
+      <div class="product-suggestions w-100">
+        <h2 class="mb-4">Other Products Recommended for you </h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <div class="suggestion-details text-secondary text-center pt-3">
+              <p> A sample product </p>
+              <p> 12 SGD </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <div class="suggestion-details text-secondary text-center pt-3">
+              <p> A sample product </p>
+              <p> 12 SGD </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <div class="suggestion-details text-secondary text-center pt-3">
+              <p> A sample product </p>
+              <p> 12 SGD </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <% code_snippet = '```html
