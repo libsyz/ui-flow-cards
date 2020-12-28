@@ -6,36 +6,46 @@
 
     <div class="main pb-5" data-ecommerces--ecommerce-1-target="main">
       <div class="product-main d-flex mb-5">
-        <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="" class="product-thumbnail mr-4 w-100">
-        <div class="product-infos w-100">
-          <h2> Check out this amazing product </h2>
-          <p class="text-secondary"> You should check out the features of this thing, they're unbelievable!</p>
-          <p class="text-secondary"> 34 SGD </p>
+        <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="" class="product-thumbnail mr-4 w-50 rounded" data-asset="product-thumbnail">
+        <div class="product-infos w-50">
+          <h2> Teddy Will-Greet-You </h2>
+          <small class="text-secondary"> Manufactured by Acme ltd. </small>
+          <p class="text-secondary mt-4"> This teddy does everything you always wanted and more. Don't hesitate to buy it right now. </p>
+            <h2> Features </h2>
+            <ul class="text-secondary">
+              <li> Waits for you at the airport with a signpost </li>
+              <li> Waits until you are out of Jail. The signpost will be ready </li>
+              <li> Waits for you outside of rehab. The signpost will be ready </li>
+          </ul>
           <button class="float-right btn btn-primary"> Add to Cart </button>
         </div>
       </div>
       <div class="product-suggestions w-100">
-        <h2 class="mb-4">Other Products Recommended for you </h2>
+        <h2 class="mb-4">Other Teddies Recommended for you </h2>
         <div class="row">
           <div class="col-sm-4">
-            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt=""
+            data-asset="product-thumbnail-2">
+
             <div class="suggestion-details text-secondary text-center pt-3">
-              <p> A sample product </p>
-              <p> 12 SGD </p>
+              <p> Bad Life Yogi </p>
+              <p> The Bear Company </p>
             </div>
           </div>
           <div class="col-sm-4">
-            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <img class="w-100 rounded" src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt=""
+                 data-asset="product-thumbnail-3">
             <div class="suggestion-details text-secondary text-center pt-3">
-              <p> A sample product </p>
-              <p> 12 SGD </p>
+              <p> FluffBall </p>
+              <p> inTeddit </p>
             </div>
           </div>
           <div class="col-sm-4">
-            <img class="w-100"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt="">
+            <img class="w-100 rounded"src="<%= asset_path('product-thumbnail-wireframe.png') %>" alt=""
+                 data-asset="product-thumbnail-4">
             <div class="suggestion-details text-secondary text-center pt-3">
-              <p> A sample product </p>
-              <p> 12 SGD </p>
+              <p> Hug Me Already </p>
+              <p> LovelyBears </p>
             </div>
           </div>
         </div>
