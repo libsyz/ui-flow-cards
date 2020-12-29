@@ -12,6 +12,10 @@
 @import "components/index";
 @import "pages/index";
 
+img[data-asset] {
+  object-fit: cover;
+}
+
 .wireframe {
   font-family: 'Flow';
 }
@@ -28,6 +32,6 @@
 }
 
 
-img.rounded-circle {
-  object-fit: cover;
-}
+
+
+

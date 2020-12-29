@@ -1,60 +1,104 @@
-
 <section id="ecommerce_2" class="align-items-end" data-controller="ecommerces--ecommerce-2"
-data-ecommerces--ecommerce-2-wireframe-class="wireframe">
-
-<%= render partial: 'shared/section', locals: { section_name: "ecommerce", number: 2 } %>
-
-<div class="main pb-5" data-ecommerces--ecommerce-2-target="main">
-  <div class="text-center mb-5">
-    <h2> Check out our amazing teddies </h2>
-    <p class="text-secondary"> They are really something, I bet you 20 bucks you will love them </p>
-  </div>
-  <div id="carouselExampleCaptions" class="carousel slide py-5" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active bg-dark"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1" class="bg-dark"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2" class="bg-dark"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="d-flex">
-          <div class="product-description w-50 ml-4">
-            <h2 class="w-75"> This is the best Teddy bear ever. </h2>
-            <p class="w-75 text-secondary"> A teddy bear from outer space, with all the things you need to hug it. </p>
-            <button class="btn btn-primary"> Buy </button>
-          </div>
-          <div class="product-image w-50">
-            <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+         data-ecommerces--ecommerce-2-wireframe-class="wireframe">
+  <%= render partial: 'shared/section', locals: { section_name: "ecommerce", number: 2 } %>
+  <div class="main pb-5" data-ecommerces--ecommerce-2-target="main">
+    <div class="text-center mb-5">
+      <h2> Check out our amazing teddies </h2>
+      <p class="text-secondary"> They are really something, I bet you 20 bucks you will love them </p>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide py-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active bg-dark"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" class="bg-dark"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" class="bg-dark"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex">
+            <div class="product-description w-50 ml-4">
+              <h2 class="w-75"> This is the best Teddy bear ever. </h2>
+              <p class="w-75 text-secondary"> A teddy bear from outer space, with all the things you need to hug it. </p>
+              <button class="btn btn-primary"> Buy </button>
+            </div>
+            <div class="product-image w-50">
+              <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" class="d-block w-100" height="450px" alt="..."
+                   data-asset="product-thumbnail" style="object-fit: cover">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex">
-          <div class="product-description w-50 ml-4">
-            <h2 class="w-75"> This is another great Teddy bear. </h2>
-            <p class="w-75 text-secondary"> A pretty solid teddy bear. Comforting like the arms of your mum.  </p>
-            <button class="btn btn-primary"> Buy </button>
+        <div class="carousel-item">
+          <div class="d-flex">
+            <div class="product-description w-50 ml-4">
+              <h2 class="w-75"> This is another great Teddy bear. </h2>
+              <p class="w-75 text-secondary"> A pretty solid teddy bear. Comforting like the arms of your mum.  </p>
+              <button class="btn btn-primary"> Buy </button>
+            </div>
+            <div class="product-image w-50">
+              <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" class="d-block w-100" height="450px" alt="..."
+                   data-asset="product-thumbnail-2" style="object-fit: cover">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
           </div>
-          <div class="product-image w-50">
-            <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex">
+            <div class="product-description w-50 ml-4">
+              <h2 class="w-75"> Not sure you expected a third this fluffy. </h2>
+              <p class="w-75 text-secondary"> I mean this is another level of teddy bear. What you waiting for?  </p>
+              <button class="btn btn-primary"> Buy </button>
+            </div>
+            <div class="product-image w-50">
+              <img src="<%= asset_path('product-thumbnail-wireframe.png') %>" class="d-block w-100" height="450px" alt="..."
+                   data-asset="product-thumbnail-3" style="object-fit: cover">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<% code_snippet = '```html
-code snippet goes here
-' %>
-
-<!-- Code Snippet below -->
-<%= render partial: 'shared/code_snippet', locals: { section_name: 'ecommerce', number: 2, code_snippet: code_snippet} %>
-
 <!--  -->
 
+  <% code_snippet = '```html
+    <div class="text-center mb-5">
+      <h2> Check out our amazing teddies </h2>
+      <p class="text-secondary"> They are really something, I bet you 20 bucks you will love them </p>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide py-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active bg-dark"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" class="bg-dark"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" class="bg-dark"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex">
+            <div class="product-description w-50 ml-4">
+              <h2 class="w-75"> This is the best Teddy bear ever. </h2>
+              <p class="w-75 text-secondary"> A teddy bear from outer space, with all the things you need to hug it. </p>
+              <button class="btn btn-primary"> Buy </button>
+            </div>
+            <div class="product-image w-50">
+              <img src="your-product-image.png" class="d-block w-100" height="450px" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- update this with another product -->
+        </div>
+        <div class="carousel-item">
+          <!-- update this with another product -->
+        </div>
+      </div>
+    </div>
+' %>
+  <!-- Code Snippet below -->
+  <%= render partial: 'shared/code_snippet', locals: { section_name: 'ecommerce', number: 2, code_snippet: code_snippet} %>
+  <!--  -->
 </section>
