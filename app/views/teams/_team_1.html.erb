@@ -1,15 +1,81 @@
 
 <section id="team_1" class="align-items-end" data-controller="teams--team-1"
-                                                data-teams--team-1-wireframe-class="wireframe">
+                                             data-teams--team-1-wireframe-class="wireframe">
 
    <%= render partial: 'shared/section', locals: { section_name: "team", number: 1 } %>
 
     <div class="main pb-5" data-teams--team-1-target="main">
       <!-- Layout Goes here -->
+      <div class="team-intro text-center pb-5">
+        <h2 class='mb-3'> Check out our amazing team </h2>
+        <p class="text-secondary w-75 m-auto"> This group of people will seriously work their asses off for the mission of our company, and they're pretty talented too. I would not like to compete with them </p>
+      </div>
+      <div class="row w-75 m-auto">
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <img src="<%= asset_path("avatar-wireframe.png") %>" height="75px" width="75px" class="rounded-circle mr-3" alt="" data-asset="avatar">
+            <div class="member-details">
+              <p class="mb-0">Thomas Bernacke</p>
+              <p class="text-secondary mb-0"> CEO & Founder </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <img src="<%= asset_path("avatar-2-wireframe.png") %>" height="75px" width="75px" class="rounded-circle mr-3" alt="" data-asset="avatar-2">
+            <div class="member-details">
+              <p class="mb-0">Dolores Jenibaro</p>
+              <p class="text-secondary mb-0"> Chief Technology Officer </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <img src="<%= asset_path("avatar-3-wireframe.png") %>" height="75px" width="75px" class="rounded-circle mr-3" alt="" data-asset="avatar-3">
+            <div class="member-details">
+              <p class="mb-0">Valentin Zurijaev</p>
+              <p class="text-secondary mb-0"> VP of Marketing </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <img src="<%= asset_path("avatar-4-wireframe.png") %>" height="75px" width="75px" class="rounded-circle mr-3" alt="" data-asset="avatar-4">
+            <div class="member-details">
+              <p class="mb-0">Grilda Zhang</p>
+              <p class="text-secondary mb-0"> Chief Operations Officer </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+<!--  -->
+
+
     <% code_snippet = '```html
-      code snippet goes here
+      <div class="team-intro text-center pb-5">
+        <h2 class="mb-3"> Check out our amazing team </h2>
+        <p class="text-secondary w-75 m-auto"> This group of people will seriously work their asses off for the mission of our company, and they\'re pretty talented too. I would not like to compete with them </p>
+      </div>
+      <div class="row w-75 m-auto">
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <img src="your-image-path.pngight="75px" width="75px" class="rounded-circle mr-3" alt="" data-asset="avatar">
+            <div class="member-details">
+              <p class="mb-0">Thomas Bernacke</p>
+              <p class="text-secondary mb-0"> CEO & Founder </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mb-4">
+          <div class="team-member d-flex align-items-center">
+            <!-- repeat this column another 3 times to complete the layout  -->
+          </div>
+        </div>
+
+      </div>
       ' %>
 
     <!-- Code Snippet below -->
