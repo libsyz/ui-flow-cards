@@ -1,0 +1,68 @@
+
+<section id="team_3" class="align-items-end" data-controller="teams--team-3"
+                                                data-teams--team-3-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "team", number: 3 } %>
+
+    <div class="main pb-5" data-teams--team-3-target="main">
+      <div class="team-description text-center">
+        <h2>Our Amazing Team</h2>
+        <p class="text-secondary mb-5 w-75 mx-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda ab ullam. Iste laboriosam totam accusantium debitis quo sapiente ullam veniam, minima vitae pariatur sunt deleniti repudiandae numquam repellat facilis corrupti ut! Excepturi praesentium soluta dolorum quasi maxime officiis maiores.</p>
+        <div class="row">
+          <div class="col-sm-3">
+             <img src="<%= asset_path("avatar-wireframe.png") %>" height="100px" width="100px"
+                  class="rounded-circle mb-3" alt="" data-asset="avatar">
+            <p class="font-weight-bold mb-0"> Thomas Bernacke </p>
+            <small class="text-secondary text-uppercase font-weight-bold"> CEO & Founder </small>
+          </div>
+          <div class="col-sm-3">
+             <img src="<%= asset_path("avatar-2-wireframe.png") %>" height="100px" width="100px"
+                  class="rounded-circle mb-3" alt="" data-asset="avatar-2">
+            <p class="font-weight-bold mb-0">Dolores Jenibaro</p>
+            <small class="text-secondary text-uppercase font-weight-bold"> Chief Technology Officer </small>
+          </div>
+          <div class="col-sm-3">
+             <img src="<%= asset_path("avatar-3-wireframe.png") %>" height="100px" width="100px"
+                  class="rounded-circle mb-3" alt="" data-asset="avatar-3">
+            <p class="font-weight-bold mb-0"> Valentin Zurijaev  </p>
+            <small class="text-secondary text-uppercase font-weight-bold"> VP of Marketing </small>
+          </div>
+          <div class="col-sm-3">
+             <img src="<%= asset_path("avatar-4-wireframe.png") %>" height="100px" width="100px"
+                  class="rounded-circle mb-3" alt="" data-asset="avatar-4">
+            <p class="font-weight-bold mb-0">  Grilda Zhang </p>
+            <small class="text-secondary text-uppercase font-weight-bold"> Chief Operations Officer </small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <div class="team-description text-center">
+        <h2>Our Amazing Team</h2>
+        <p class="text-secondary mb-5 w-75 mx-auto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda ab ullam. Iste laboriosam totam accusantium debitis quo sapiente ullam veniam, minima vitae pariatur sunt deleniti repudiandae numquam repellat facilis corrupti ut! Excepturi praesentium soluta dolorum quasi maxime officiis maiores.</p>
+        <div class="row">
+          <div class="col-sm-3">
+             <img src="your image path" height="100px" width="100px" class="rounded-circle mb-3" alt="">
+            <p class="font-weight-bold mb-0"> Thomas Bernacke </p>
+            <small class="text-secondary text-uppercase font-weight-bold"> CEO & Founder </small>
+          </div>
+          <div class="col-sm-3">
+             <!-- repeat the first .col-sm-3 here -->
+          </div>
+          <div class="col-sm-3">
+             <!-- repeat the first .col-sm-3 here -->
+          </div>
+          <div class="col-sm-3">
+             <!-- repeat the first .col-sm-3 here -->
+          </div>
+        </div>
+      </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'team', number: 3, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
