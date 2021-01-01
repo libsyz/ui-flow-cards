@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboards/index'
   get 'teams/index'
   get 'ecommerces/index'
   get 'maps/index'
@@ -10,5 +11,6 @@ Rails.application.routes.draw do
   get '/maps', to: 'maps#index'
   get '/ecommerce', to: 'ecommerces#index'
   get '/teams', to: 'teams#index'
+  get '/dashboards', to: 'dashboards#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

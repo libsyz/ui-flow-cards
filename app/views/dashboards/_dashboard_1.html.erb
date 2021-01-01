@@ -1,0 +1,60 @@
+
+<section id="dashboard_1" class="align-items-end" data-controller="dashboards--dashboard-1"
+                                                data-dashboards--dashboard-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "dashboard", number: 1 } %>
+
+    <div class="main pb-5" data-dashboards--dashboard-1-target="main">
+      <!-- Layout Goes here -->
+      <div class="text-center">
+        <h2>Congratulations!</h2>
+        <p class="text-secondary mb-5">
+          Your sales seem to be going quite well!
+        </p>
+        <img src=" <%= asset_path('line-chart-wireframe.png')  %>" class="w-100" height="400px"  alt="" data-dashboards--dashboard-1-target="wireframe">
+        <div class="chart d-none" data-dashboards--dashboard-1-target="chart">
+          <div id="chart-1" style="height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <% code_snippet = '```html
+    <!-- This example uses chartkick.js
+         Go to https://github.com/ankane/chartkick.js
+         to learn more about how to set it up
+     -->
+
+     <div class="text-center">
+        <h2>Congratulations!</h2>
+        <p class="text-secondary mb-5">
+          Your sales seem to be going quite well!
+        </p>
+      <div class="chart>
+          <div id="chart-1" style="height: 400px;"></div>
+      </div>
+    </div>
+
+    <script>
+
+    // Make sure you have the chartkick library library imported
+
+    new Chartkick["LineChart"]("chart-1", {"2020-01-01": 11000,
+                                           "2020-02-01": 12000,
+                                           "2020-03-01": 23000,
+                                           "2020-04-01": 17000,
+                                           "2020-05-01": 27000,
+                                           "2020-06-01": 30000 }
+                                           ,
+                                           {thousands: ","})
+
+    </script>
+
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'dashboard', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
