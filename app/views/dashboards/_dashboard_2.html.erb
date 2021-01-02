@@ -5,7 +5,7 @@
    <%= render partial: 'shared/section', locals: { section_name: "dashboard", number: 2 } %>
 
     <div class="main pb-5" data-dashboards--dashboard-2-target="main">
-      <div class="row mb-5">
+      <div class="row my-5">
         <div class="col-sm-5">
           <div class="bar-chart d-flex justify-content-center">
             <img src="<%= asset_path('dashboard-column-small-wireframe.png') %>" height="250px" alt=""
@@ -36,9 +36,53 @@
       </div>
     </div>
 
+
     <% code_snippet = '```html
-      code snippet goes here
+
+     <!--
+
+     This example uses chartkick.js
+     Go to https://github.com/ankane/chartkick.js
+     to learn more about how to set it up
+
+      -->
+
+      <div class="row mb-5">
+        <div class="col-sm-5">
+          <div class="bar-chart d-flex justify-content-center">
+            <div id="dashboard-2-chart-1" class="d-none" style="height: 250px;"
+             data-dashboards--dashboard-2-target="columnChart"></div>
+          </div>
+        </div>
+        <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
+          <h2 class=" w-75">Your revenue seems to be in good shape</h2>
+          <p class="text-secondary w-75"> Over the past few months, your income has been increasing steadily. You should consider moving the next round of funding! </p>
+        </div>
+      </div>
+      <div class="row mb-5">
+          <div class="col-sm-7 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="w-75"> Market Share is on the bag</h2>
+            <p class="text-secondary w-75"> You seem to have it better than all your competitors. Well done! A McKinsey consultant would tell you it\'s a good moment to raise prices!</p>
+          </div>
+          <div class="col-sm-5">
+          <div class="bar-chart d-flex">
+            <div id="dashboard-2-chart-2" class="d-none" style="height: 250px;"
+             data-dashboards--dashboard-2-target="donutChart"></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+
+       // Make sure you have the chartkick library library imported
+
+       new Chartkick.ColumnChart("dashboard-2-chart-1", anotherObjectWithData)
+       new Chartkick.PieChart("dashboard-2-chart-2", anObjectWithData)
+
+      </script>
       ' %>
+
+
 
     <!-- Code Snippet below -->
       <%= render partial: 'shared/code_snippet', locals: { section_name: 'dashboard', number: 2, code_snippet: code_snippet} %>
