@@ -21,15 +21,17 @@ export default class extends Controller {
 
   connect() {
     this.mainTarget.classList.add(this.wireframeClass);
+    this.drawColumnChart();
+    this.drawDonutChart();
   }
 
   toggle() {
     this.toggleText()
-    this.toggleWireframe();
-    this.toggleChart();
+    //this.toggleWireframe();
+    //this.toggleChart();
     if (!this.chartsDrawn) {
-      this.drawColumnChart();
-      this.drawDonutChart();
+
+
       this.chartsDrawn = false;
     }
 
@@ -59,7 +61,7 @@ export default class extends Controller {
   }
 
   drawDonutChart() {
-    new Chartkick.PieChart("dashboard-2-chart-2", {"You Inc.": 65,
+    new Chartkick.PieChart("dashboard-3-chart-2", {"You Inc.": 65,
                                            "Google": 10,
                                            "Amazon": 17,
                                            "Microsoft": 5,
@@ -67,11 +69,11 @@ export default class extends Controller {
                                            ,
                                            {thousands: ",",
                                             donut: true ,
-                                            legend: false});
+                                            legend: true});
   }
 
   drawColumnChart() {
-    new Chartkick.ColumnChart("dashboard-2-chart-1", {
+    new Chartkick.ColumnChart("dashboard-3-chart-1", {
                                            "January": 12000,
                                            "February": 23000,
                                            "March": 17000,

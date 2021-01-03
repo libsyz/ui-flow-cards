@@ -1,0 +1,39 @@
+
+<section id="dashboard_3" class="align-items-end" data-controller="dashboards--dashboard-3"
+data-dashboards--dashboard-3-wireframe-class="wireframe">
+
+<%= render partial: 'shared/section', locals: { section_name: "dashboard", number: 3 } %>
+
+<div class="main pb-5" data-dashboards--dashboard-3-target="main">
+  <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+    <a class="list-group-item list-group-item-action active" id="list-month-sales-list" data-toggle="list" href="#list-month-sales" role="tab" aria-controls="month-sales"> Monthly Sales </a>
+    <a class="list-group-item list-group-item-action" id="list-market-share-list" data-toggle="list" href="#list-market-share" role="tab" aria-controls="market-share"> Market Share </a>
+  </div>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="list-month-sales" role="tabpanel" aria-labelledby="list-month-sales-list">
+      <h2 class="my-5"> Your monthly Sales look pretty handsome! </h2>
+      <div id="dashboard-3-chart-1" class="" style="height: 300px;"
+       data-dashboards--dashboard-3-target="columnChart"></div>
+    </div>
+
+    <div class="tab-pane fade" id="list-market-share" role="tabpanel" aria-labelledby="list-market-share-list">
+      <h2 class="my-5"> Market share rocks. Business is good! </h2>
+      <div id="dashboard-3-chart-2" class="" style="height: 300px;"
+           data-dashboards--dashboard-3-target="donutChart"></div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<% code_snippet = '```html
+code snippet goes here
+' %>
+
+<!-- Code Snippet below -->
+<%= render partial: 'shared/code_snippet', locals: { section_name: 'dashboard', number: 3, code_snippet: code_snippet} %>
+
+<!--  -->
+
+</section>
