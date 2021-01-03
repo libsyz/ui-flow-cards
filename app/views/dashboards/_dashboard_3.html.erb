@@ -12,13 +12,17 @@ data-dashboards--dashboard-3-wireframe-class="wireframe">
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="list-month-sales" role="tabpanel" aria-labelledby="list-month-sales-list">
       <h2 class="my-5"> Your monthly Sales look pretty handsome! </h2>
-      <div id="dashboard-3-chart-1" class="" style="height: 300px;"
+      <img src="<%= asset_path('dashboard-column-small-wireframe.png') %>" height="250px" alt=""
+             data-dashboards--dashboard-3-target="columnChartWireframe">
+      <div id="dashboard-3-chart-1" class="d-none" style="height: 300px;"
        data-dashboards--dashboard-3-target="columnChart"></div>
     </div>
 
     <div class="tab-pane fade" id="list-market-share" role="tabpanel" aria-labelledby="list-market-share-list">
       <h2 class="my-5"> Market share rocks. Business is good! </h2>
-      <div id="dashboard-3-chart-2" class="" style="height: 300px;"
+      <img src="<%= asset_path('dashboard-donut-small-wireframe.png') %>" height="250px" alt=""
+             data-dashboards--dashboard-3-target="donutChartWireframe">
+      <div id="dashboard-3-chart-2" class="d-none" style="height: 300px;"
            data-dashboards--dashboard-3-target="donutChart"></div>
     </div>
 
