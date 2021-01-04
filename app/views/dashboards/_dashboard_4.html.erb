@@ -1,0 +1,48 @@
+
+<section id="dashboard_4" class="align-items-end" data-controller="dashboards--dashboard-4"
+                                                data-dashboards--dashboard-4-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "dashboard", number: 4 } %>
+
+    <div class="main pb-5" data-dashboards--dashboard-4-target="main">
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <img src="<%= asset_path('dashboard-donut-small-wireframe.png') %>" height="250px" alt=""
+               class="mb-5" data-dashboards--dashboard-4-target="donutChartWireframe1">
+          <div id="dashboard-4-chart-1" class="d-none mb-5" style="height: 250px;"
+               data-dashboards--dashboard-4-target="donutChart1"></div>
+          <h2> New Signups vs Churn </h2>
+          <p> This aggregates the total of new users and users that signed out of our service in the last 15 days. </p>
+          <a href="#" class="btn btn-secondary">see details</a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="<%= asset_path('dashboard-donut-small-wireframe.png') %>" height="250px" alt=""
+               class="mb-5" data-dashboards--dashboard-4-target="donutChartWireframe2">
+          <div id="dashboard-4-chart-2" class="d-none mb-5" style="height: 250px;"
+               data-dashboards--dashboard-4-target="donutChart2"></div>
+          <h2> LPV vs ARR </h2>
+          <p> This is a measure of good standards I am telling ya. </p>
+          <a href="#" class="btn btn-secondary">see details</a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="<%= asset_path('dashboard-donut-small-wireframe.png') %>" height="250px" alt=""
+               class="mb-5" data-dashboards--dashboard-4-target="donutChartWireframe3">
+          <div id="dashboard-4-chart-3" class="d-none mb-5" style="height: 250px;"
+               data-dashboards--dashboard-4-target="donutChart3"></div>
+          <h2> This Vs That </h2>
+          <p> This is a measure of good standards I am telling ya. </p>
+          <a href="#" class="btn btn-secondary">see details</a>
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'dashboard', number: 4, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
