@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  get 'dashboards/index'
-  get 'teams/index'
-  get 'ecommerces/index'
-  get 'maps/index'
-  get 'forms/index'
   root to: 'articles#index'
   get '/articles', to: 'articles#index'
   get '/features', to: 'features#index'
@@ -12,5 +7,6 @@ Rails.application.routes.draw do
   get '/ecommerce', to: 'ecommerces#index'
   get '/teams', to: 'teams#index'
   get '/dashboards', to: 'dashboards#index'
+  get '/searches', to: 'searches#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
