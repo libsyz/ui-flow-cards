@@ -1,11 +1,59 @@
 
-<section id="search_2" class="align-items-end" data-controller="searchs--search-2"
-                                                data-searchs--search-2-wireframe-class="wireframe">
+<section id="search_2" class="align-items-end" data-controller="searches--search-2"
+                                                data-searches--search-2-wireframe-class="wireframe">
 
    <%= render partial: 'shared/section', locals: { section_name: "search", number: 2 } %>
 
-    <div class="main pb-5" data-searchs--search-2-target="main">
+    <div class="main pb-5" data-searches--search-2-target="main">
       <!-- Layout Goes here -->
+      <form class="form mx-auto mb-3" action="">
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Kittens looking for trouble" class="form-control">
+          <div class="input-group-append">
+            <button class="btn btn-primary"> <i class="fas fa-search text-secondary"> </i> Search</button>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <div class="result d-flex align-items-center border mb-4">
+        <img
+          src="<%= asset_path('feature-small-1-wireframe.png') %>"
+          style="object-fit: cover"
+          height="80px"
+          width="80px"
+          alt=""
+          class="mr-4">
+        <div class="result-info">
+          <h4> This is a great result </h4>
+          <p class="text-secondary mb-1"> With a description worth noticing</p>
+        </div>
+      </div>
+      <div class="result d-flex align-items-center border mb-4">
+        <img
+          src="<%= asset_path('feature-small-1-wireframe.png') %>"
+          style="object-fit: cover"
+          height="80px"
+          width="80px"
+          alt=""
+          class="mr-4">
+        <div class="result-info">
+          <h4> This is a great result </h4>
+          <p class="text-secondary mb-1"> With a description worth noticing</p>
+        </div>
+      </div>
+      <div class="result d-flex align-items-center border mb-4">
+        <img
+          src="<%= asset_path('feature-small-1-wireframe.png') %>"
+          style="object-fit: cover"
+          height="80px"
+          width="80px"
+          alt=""
+          class="mr-4">
+        <div class="result-info">
+          <h4> This is a great result </h4>
+          <p class="text-secondary mb-1"> With a description worth noticing</p>
+        </div>
+      </div>
     </div>
 
     <% code_snippet = '```html
