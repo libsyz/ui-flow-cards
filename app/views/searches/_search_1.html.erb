@@ -7,7 +7,29 @@
     <div class="main pb-5" data-searches--search-1-target="main">
       <!-- Layout Goes here -->
       <div class="search my-5 text-center">
-      <h1 class="mb-3"> Finder.com </h1>
+        <h1 class="mb-3"> Finder.com </h1>
+          <form class="form w-50 mx-auto mb-3" action="">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-search text-secondary"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                <button class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </form>
+          <p class="text-secondary mx-auto w-25"> Our AI-powered engine will find anything you want in milliseconds</p>
+          <hr class="mx-auto w-25">
+          <small class="text-secondary"> you can also search in <a class="text-warning" href="#">Spanish</a> </small>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <div class="search my-5 text-center">
+        <h1 class="mb-3"> Finder.com </h1>
         <form class="form w-50 mx-auto mb-3" action="">
           <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -25,10 +47,6 @@
         <hr class="mx-auto w-25">
         <small class="text-secondary"> you can also search in <a class="text-warning" href="#">Spanish</a> </small>
       </div>
-    </div>
-
-    <% code_snippet = '```html
-      code snippet goes here
       ' %>
 
     <!-- Code Snippet below -->
