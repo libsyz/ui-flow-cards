@@ -1,15 +1,137 @@
 
-<section id="search_3" class="align-items-end" data-controller="searchs--search-3"
-                                                data-searchs--search-3-wireframe-class="wireframe">
+<section id="search_3" class="align-items-end" data-controller="searches--search-3"
+                                                data-searches--search-3-wireframe-class="wireframe">
 
    <%= render partial: 'shared/section', locals: { section_name: "search", number: 3 } %>
 
-    <div class="main pb-5" data-searchs--search-3-target="main">
+    <div class="main pb-4" data-searches--search-3-target="main">
       <!-- Layout Goes here -->
+      <form class="form mx-auto mb-5" action="">
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Kittens looking for trouble" class="form-control">
+          <div class="input-group-append">
+            <button class="btn btn-primary"> <i class="fas fa-search text-secondary"> </i> Search</button>
+          </div>
+        </div>
+      </form>
+      <div class="results row">
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-4">
+          <img class="search-wireframe" height="100%" width="100%" src="<%= asset_path('feature-small-1-wireframe.png') %>" alt="">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="https://picsum.photos/300/200?grayscale" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> <%= Faker::Book.title %> </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> <%= rand(100) %> <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <% code_snippet = '```html
-      code snippet goes here
+      <form class="form mx-auto mb-5" action="">
+        <div class="input-group mb-3">
+          <input type="text" placeholder="Kittens looking for trouble" class="form-control">
+          <div class="input-group-append">
+            <button class="btn btn-primary"> <i class="fas fa-search text-secondary"> </i> Search</button>
+          </div>
+        </div>
+      </form>
+      <div class="results row">
+        <div class="col-sm-4 mb-4">
+          <div class="card w-100 h-100 d-none">
+            <div class="card-top w-100 h-100 d-flex flex-column align-content-stretch overflow-hidden">
+              <img src="your-image-path" class="h-100" style="object-fit: cover" alt="">
+              <div class="card-bottom">
+                <p class="pl-3 pt-2 mb-1"> A fancy title </p>
+                <div class="d-flex justify-content-between">
+                  <p class="text-secondary pt-1 pl-3"> 5th, January 2021 </p> <p class="text-secondary pt-1 pr-3"> 45 <i class="fas fa-heart text-warning"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-4">
+        ....
+        </div>
+
+        <!-- Keep adding card elements  -->
+      </div>
       ' %>
 
     <!-- Code Snippet below -->

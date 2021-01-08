@@ -20,7 +20,12 @@ export default class extends Controller {
   }
 
   toggle() {
-    toggle(this);
+    this.mainTarget.classList.toggle(this.wireframeClass);
+    this.mainTarget.querySelectorAll('.search-wireframe').forEach((img) => {
+      img.classList.toggle('d-none');
+    })
+    this.mainTarget.querySelectorAll('.card').forEach((card) => {
+      card.classList.toggle('d-none');
+    })
   }
-
 }
