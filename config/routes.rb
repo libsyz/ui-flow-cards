@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'testimonials/index'
   root to: 'articles#index'
   get '/articles', to: 'articles#index'
   get '/features', to: 'features#index'
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   get '/teams', to: 'teams#index'
   get '/dashboards', to: 'dashboards#index'
   get '/searches', to: 'searches#index'
+  get '/testimonials', to: 'testimonials#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

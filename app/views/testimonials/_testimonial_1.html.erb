@@ -1,0 +1,63 @@
+
+<section id="testimonial_1" class="align-items-end" data-controller="testimonials--testimonial-1"
+                                                data-testimonials--testimonial-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "testimonial", number: 1 } %>
+
+    <div class="main pb-5" data-testimonials--testimonial-1-target="main">
+      <!-- Layout Goes here -->
+      <h2 class="text-center mb-5"> What our customers say </h2>
+      <div class="customers row">
+        <div class="col-sm-4 text-center">
+          <div class="col-sm-12 m-3 py-3">
+            <img src="<%= asset_path('avatar-wireframe.png') %>" width="125px" class="mb-3 rounded-circle" alt=""
+                 data-asset="avatar">
+            <h5 class="w-75 mx-auto">"Unbelievably good. It transformed my business"</h5>
+            <p class="text-secondary w-75 mx-auto"> John Johnson, AllGood CEO</p>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+          </div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div class="col-sm-12 m-3 py-3">
+            <img src="<%= asset_path('avatar-2-wireframe.png') %>" width="125px" class="mb-3 rounded-circle" alt=""
+                 data-asset="avatar-2">
+            <h5 class="w-75 mx-auto">"Best experience in SaaS, fully recommend"</h5>
+            <p class="text-secondary w-75 mx-auto"> Cindy Cinder, CTO at Cindit</p>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+          </div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div class="col-sm-12 m-3 py-3">
+            <img src="<%= asset_path('avatar-3-wireframe.png') %>" width="125px" class="mb-3 rounded-circle" alt=""
+                 data-asset="avatar-3">
+            <h5 class="w-75 mx-auto">"These guys changed the game forever"</h5>
+            <p class="text-secondary w-75 mx-auto"> Jack Jackson, VP at Lunjack</p>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+            <i class="fas fa-star text-primary"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'testimonial', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
