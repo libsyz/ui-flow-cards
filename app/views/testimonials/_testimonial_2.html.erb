@@ -1,0 +1,117 @@
+
+<section id="testimonial_2" class="align-items-end" data-controller="testimonials--testimonial-2"
+                                                data-testimonials--testimonial-2-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "testimonial", number: 2 } %>
+
+    <div class="main pb-5" data-testimonials--testimonial-2-target="main">
+      <!-- Layout Goes here -->
+      <div class="text-center header mb-">
+        <h2 class=> This is our product on Twitter </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="col-sm-12 m-3 border rounded">
+            <div class="twitter-user py-3 d-flex align-items-top justify-content-between">
+            <div class="twitter-user-profile d-flex">
+            <img class="mr-3 rounded-circle" data-asset="avatar"  src="<%= asset_path('avatar-wireframe.png') %>" height='50px' alt="">
+            <div class="twitter-user-details">
+            <p class="m-0"> Troy McClure </p>
+            <p class="text-secondary m-0"> @clurethetroy </p>
+            </div>
+            </div>
+            <i class="fab fa-twitter text-info"></i>
+            </div>
+            <div class="tweet-testimonial">
+            <p> This might be the new category killer. The folks at <span class="text-info">#yourproduct</span>  have done an incredible job. Hats off! </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-12 m-3 border rounded">
+            <div class="twitter-user py-3 d-flex align-items-top justify-content-between">
+            <div class="twitter-user-profile d-flex">
+            <img class="mr-3 rounded-circle" data-asset="avatar-2"  src="<%= asset_path('avatar-2-wireframe.png') %>" height='50px' alt="">
+            <div class="twitter-user-details">
+            <p class="m-0"> Joanna Lopez </p>
+            <p class="text-secondary m-0"> @queenjoa </p>
+            </div>
+            </div>
+            <i class="fab fa-twitter text-info"></i>
+            </div>
+            <div class="tweet-testimonial">
+            <p> You have not switched <span class="text-info">#yourproduct</span> yet? You are missing on a ton. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-12 m-3 border rounded">
+            <div class="twitter-user py-3 d-flex align-items-top justify-content-between">
+            <div class="twitter-user-profile d-flex">
+            <img class="mr-3 rounded-circle" data-asset="avatar-3"  src="<%= asset_path('avatar-3-wireframe.png') %>" height='50px' alt="">
+            <div class="twitter-user-details">
+            <p class="m-0"> Bender Merrimen </p>
+            <p class="text-secondary m-0"> @threelis56 </p>
+            </div>
+            </div>
+            <i class="fab fa-twitter text-info"></i>
+            </div>
+            <div class="tweet-testimonial">
+            <p> I cannot live without <span class="text-info">#yourproduct</span> anymore. Every feature they ship is exactly what I need.  </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="col-sm-12 m-3 border rounded">
+            <div class="twitter-user py-3 d-flex align-items-top justify-content-between">
+            <div class="twitter-user-profile d-flex">
+            <img class="mr-3 rounded-circle" data-asset="avatar-4"  src="<%= asset_path('avatar-4-wireframe.png') %>" height='50px' alt="">
+            <div class="twitter-user-details">
+            <p class="m-0"> Lisa DeVrietto </p>
+            <p class="text-secondary m-0"> @vrietlisa </p>
+            </div>
+            </div>
+            <i class="fab fa-twitter text-info"></i>
+            </div>
+            <div class="tweet-testimonial">
+            <p> <span class="text-info">#yourproduct</span> is so blazing fast! Finally I can claim back my time. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <!-- This layout uses FontAwesome -->
+
+      <div class="text-center header mb-">
+        <h2 class=> This is our product on Twitter </h2>
+        <div class="col-sm-6">
+          <div class="col-sm-12 m-3 border rounded">
+            <div class="twitter-user py-3 d-flex align-items-top justify-content-between">
+              <div class="twitter-user-profile d-flex">
+              <img class="mr-3 rounded-circle"  src="your-image-path.png" height="50px" alt="twitter avatar">
+                <div class="twitter-user-details">
+                  <p class="m-0"> Troy McClure </p>
+                  <p class="text-secondary m-0"> @clurethetroy </p>
+                </div>
+              </div>
+              <i class="fab fa-twitter text-info"></i>
+            </div>
+            <div class="tweet-testimonial">
+              <p> This might be the new category killer. The folks at <span class="text-info">#yourproduct</span>  have done an incredible job. Hats off! </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <!-- continue adding columns -->
+        </div>
+      </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'testimonial', number: 2, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
