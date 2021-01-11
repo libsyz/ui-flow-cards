@@ -1,0 +1,72 @@
+
+<section id="testimonial_3" class="align-items-end" data-controller="testimonials--testimonial-3"
+                                                data-testimonials--testimonial-3-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "testimonial", number: 3 } %>
+
+    <div class="main pb-5" data-testimonials--testimonial-3-target="main">
+      <div class="text-center mb-5">
+        <h2> What our users are saying </h2>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center mb-5">
+            <p class="text-uppercase mb-4"> A company Logo &trade; </p>
+            <h5 class="mb-4 font-weight-bold"> "I can't believe how reliable this product is" </h5>
+            <div class="d-flex justify-content-center align-items-center pb-5">
+              <img src="<%= asset_path('avatar-wireframe.png')  %>" class="rounded-circle mr-3" height="80px" alt="" data-asset="avatar">
+              <div class="testimonial-reference text-left">
+                <p class="m-0"> Valentin Dubrovniev </p>
+                <p class="text-secondary m-0"> Senior Engineer </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center mb-5">
+            <p class="text-uppercase mb-4"> A company Logo &trade; </p>
+            <h5 class="mb-4 font-weight-bold"> "I can't believe how reliable this product is" </h5>
+            <div class="d-flex justify-content-center align-items-center pb-5">
+              <img src="<%= asset_path('avatar-wireframe.png')  %>" class="rounded-circle mr-3" height="80px" alt="" data-asset="avatar">
+              <div class="testimonial-reference text-left">
+                <p class="m-0"> Valentin Dubrovniev </p>
+                <p class="text-secondary m-0"> Senior Engineer </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item text-center mb-5">
+            <p class="text-uppercase mb-4"> A company Logo &trade; </p>
+            <h5 class="mb-4 font-weight-bold"> "I can't believe how reliable this product is" </h5>
+            <div class="d-flex justify-content-center align-items-center pb-5">
+              <img src="<%= asset_path('avatar-wireframe.png')  %>" class="rounded-circle mr-3" height="80px" alt="" data-asset="avatar">
+              <div class="testimonial-reference text-left">
+                <p class="m-0"> Valentin Dubrovniev </p>
+                <p class="text-secondary m-0"> Senior Engineer </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-dark"></li>
+        </ol>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'testimonial', number: 3, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
