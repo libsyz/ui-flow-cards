@@ -1,0 +1,20 @@
+
+<section id="login_1" class="align-items-end" data-controller="logins--login-1"
+                                                data-logins--login-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "login", number: 1 } %>
+
+    <div class="main pb-5" data-logins--login-1-target="main">
+      <!-- Layout Goes here -->
+    </div>
+
+    <% code_snippet = '```html
+      code snippet goes here
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'login', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
