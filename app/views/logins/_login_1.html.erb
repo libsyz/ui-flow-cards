@@ -5,11 +5,25 @@
    <%= render partial: 'shared/section', locals: { section_name: "login", number: 1 } %>
 
     <div class="main pb-5" data-logins--login-1-target="main">
-      <!-- Layout Goes here -->
+        <img src="<%= asset_path('feature-hero-wireframe.png') %> "
+             alt="" class="w-100 mb-5"
+             data-asset="feature-hero">
+        <form class="w-25 m-auto mb-3" action="">
+          <input class="form-control mb-3" type="text" placeholder="@yourusername">
+          <input class="form-control mb-3" type="email" placeholder="jon.snow@winterfell.io">
+          <input class="form-control mb-3" type="password" placeholder="your password...">
+          <input type="submit" value="Sign Up" class="btn btn-primary w-100">
+        </form>
     </div>
 
     <% code_snippet = '```html
-      code snippet goes here
+        <img src="your-image-path.png" class="w-100 mb-5">
+        <form class="w-25 m-auto mb-3" action="">
+          <input class="form-control mb-3" type="text" placeholder="@yourusername">
+          <input class="form-control mb-3" type="email" placeholder="jon.snow@winterfell.io">
+          <input class="form-control mb-3" type="password" placeholder="your password...">
+          <input type="submit" value="Sign Up" class="btn btn-primary w-100">
+        </form>
       ' %>
 
     <!-- Code Snippet below -->
