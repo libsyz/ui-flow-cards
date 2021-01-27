@@ -1,0 +1,81 @@
+
+<section id="setting_1" class="align-items-end" data-controller="settings--setting-1"
+                                                data-settings--setting-1-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "setting", number: 1 } %>
+
+    <div class="main pb-5" data-settings--setting-1-target="main">
+      <div class="d-flex settings-container">
+        <div class="bg-light border-right w-25 p-4">
+          <p class="text-uppercase text-secondary"> Your Robo Advisor </p>
+          <img class="rounded-circle mb-3" height="80px" src="<%= asset_path('avatar-wireframe.png')  %>"
+           data-asset="avatar" alt="avatar">
+          <p class="text-secondary"> @bender_the_legend </p>
+          <p class="text-secondary"> <i class="fas fa-tasks"></i> 145 Requests Served </p>
+          <p class="text-secondary"> <i class="far fa-money-bill-alt"></i> Saved you 4,500 $ so far </p>
+          <p class="text-secondary"> <i class="fas fa-battery-half"></i> 12/50 requests left in your current plan </p>
+          <p class="text-secondary"> Status: <span class="bg-success text-light py-1 px-2 rounded"> available </span> </p>
+        </div>
+        <div class="w-75 p-4">
+          <h5 class="text-uppercase"> Settings </h5>
+          <p class="text-secondary mb-4"> Tune you amazing robo advisor to your specific needs. </p>
+          <form>
+            <div class="form-group mb-4">
+              <label for="formControlRange">Agreeableness</label>
+              <input type="range" class="form-control-range" id="formControlRange" value="10">
+            </div>
+            <div class="form-group mb-4">
+              <label for="formControlRange">Conscientiousness</label>
+              <input type="range" class="form-control-range" id="formControlRange" value="75" >
+            </div>
+            <div class="form-group mb-5">
+              <label for="formControlRange">Neuroticism</label>
+              <input type="range" class="form-control-range" id="formControlRange" value="30">
+            </div>
+            <button class="btn btn-primary float-right" type="submit"> Save Preferences </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <div class="d-flex settings-container">
+        <div class="bg-light border-right w-25 p-4">
+          <p class="text-uppercase text-secondary"> Your Robo Advisor </p>
+          <img class="rounded-circle mb-3" height="80px" src="your-image-path" alt="avatar">
+          <p class="text-secondary"> @bender_the_legend </p>
+          <p class="text-secondary"> <i class="fas fa-tasks"></i> 145 Requests Served </p>
+          <p class="text-secondary"> <i class="far fa-money-bill-alt"></i> Saved you 4,500 $ so far </p>
+          <p class="text-secondary"> <i class="fas fa-battery-half"></i> 12/50 requests left in your current plan </p>
+          <p class="text-secondary"> Status: <span class="bg-success text-light py-1 px-2 rounded"> available </span> </p>
+        </div>
+        <div class="w-75 p-4">
+          <h5 class="text-uppercase"> Settings </h5>
+          <p class="text-secondary mb-4"> Tune you amazing robo advisor to your specific needs. </p>
+          <form>
+            <div class="form-group mb-4">
+              <label for="formControlRange">Agreeableness</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+            <div class="form-group mb-4">
+              <label for="formControlRange">Conscientiousness</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+            <div class="form-group mb-5">
+              <label for="formControlRange">Neuroticism</label>
+              <input type="range" class="form-control-range" id="formControlRange">
+            </div>
+            <button class="btn btn-primary float-right" type="submit"> Save Preferences </button>
+          </form>
+        </div>
+      </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'setting', number: 1, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
+
