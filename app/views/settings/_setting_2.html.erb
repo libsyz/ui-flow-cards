@@ -1,0 +1,82 @@
+
+<section id="setting_2" class="align-items-end" data-controller="settings--setting-2"
+                                                data-settings--setting-2-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "setting", number: 2 } %>
+
+    <div class="main pb-5" data-settings--setting-2-target="main">
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-secondary border rounded p-2"> <i class="far fa-user-circle"></i></i> Account</p>
+          <p class="text-secondary p-2"> <i class="fas fa-key"></i> </i> Password</p>
+          <p class="text-secondary p-2"><i class="far fa-credit-card"></i> </i> Billing</p>
+        </div>
+        <div class="col-sm-6 border-right border-bottom border-left shadow-sm pb-4 px-5">
+          <h4> Profile </h4>
+          <hr>
+          <form class="mb-3" action="#">
+            <label>Photo</label>
+            <div class="d-flex mb-3 align-items-center">
+              <img class="rounded-circle mr-3"
+                   height="50px" src="<%= asset_path('avatar-wireframe.png')  %>"
+                   data-asset="avatar" alt="">
+              <div class="btn border"> Change Avatar </div>
+            </div>
+            <label for="#name"> Name </label>
+            <input class="form-control mb-3" type="text" name="user-name" id="name" placeholder="Joshua Ritchie">
+            <label for="">Email </label>
+            <input class="form-control mb-3" type="email" name="user-email" id="email" placeholder="jritch@polt.com">
+            <label for="#twitter">Twitter Username </label>
+            <input class="form-control mb-3" type="text" name="user-twitter" id="twitter" placeholder="@jritch">
+            <label for="#github">Github Username </label>
+            <input class="form-control mb-3" type="text" name="user-github" id="github" placeholder="joshisdev">
+          </form>
+          <hr>
+          <div class="d-flex">
+            <div class="btn btn-primary mr-3">Save</div>
+            <div class="btn btn-secondary">Cancel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-secondary border rounded p-2"> <i class="far fa-user-circle"></i></i> Account</p>
+          <p class="text-secondary p-2"> <i class="fas fa-key"></i> </i> Password</p>
+          <p class="text-secondary p-2"><i class="far fa-credit-card"></i> </i> Billing</p>
+        </div>
+        <div class="col-sm-6 border-right border-bottom border-left shadow-sm pb-4 px-5">
+          <h4> Profile </h4>
+          <hr>
+          <form class="mb-3" action="#">
+            <label>Photo</label>
+            <div class="d-flex mb-3 align-items-center">
+              <img class="rounded-circle mr-3" height="50px" src="your_image_path.png" alt="">
+              <div class="btn border"> Change Avatar </div>
+            </div>
+            <label for="#name"> Name </label>
+            <input class="form-control mb-3" type="text" name="user-name" id="name" placeholder="Joshua Ritchie">
+            <label for="">Email </label>
+            <input class="form-control mb-3" type="email" name="user-email" id="email" placeholder="jritch@polt.com">
+            <label for="#twitter">Twitter Username </label>
+            <input class="form-control mb-3" type="text" name="user-twitter" id="twitter" placeholder="@jritch">
+            <label for="#github">Github Username </label>
+            <input class="form-control mb-3" type="text" name="user-github" id="github" placeholder="joshisdev">
+          </form>
+          <hr>
+          <div class="d-flex">
+            <div class="btn btn-primary mr-3">Save</div>
+            <div class="btn btn-secondary">Cancel</div>
+          </div>
+        </div>
+      </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'setting', number: 2, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
