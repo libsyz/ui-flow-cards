@@ -1,0 +1,62 @@
+
+<section id="setting_3" class="align-items-end" data-controller="settings--setting-3"
+                                                data-settings--setting-3-wireframe-class="wireframe">
+
+   <%= render partial: 'shared/section', locals: { section_name: "setting", number: 3 } %>
+
+    <div class="main pb-5" data-settings--setting-3-target="main">
+      <div class="d-flex mb-4">
+          <img height="100px" class="mr-4" src="<%= asset_path('setting-1-wireframe.png')  %>"
+               data-asset="setting-1" alt="">
+          <div>
+            <div class="d-flex align-items-center">
+              <h4 class="mr-4"> Live Sync </h4>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1"></label>
+              </div>
+            </div>
+            <p class="text-secondary"> The feature enables incremental replication from a backup of a virtual machine to a synced copy of the virtual machine (destination VM). </p>
+          </div>
+      </div>
+      <div class="d-flex mb-4">
+        <img height="100px" class="mr-4" src="<%= asset_path('setting-2-wireframe.png')  %>"
+             data-asset="setting-2" alt="">
+        <div>
+          <div class="d-flex align-items-center">
+            <h4 class="mr-4"> Usage Metrics </h4>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitch2">
+              <label class="custom-control-label" for="customSwitch2"></label>
+            </div>
+          </div>
+          <p class="text-secondary"> Help us improve the user experience by collecting anonymized data. We'll also turn it into insights that your engineering team can use to improve.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <% code_snippet = '```html
+    <div class="main pb-5" data-settings--setting-3-target="main">
+      <div class="d-flex mb-4">
+          <img height="100px" class="mr-4" src="your-image-path.png" alt="your-image">
+          <div>
+            <div class="d-flex align-items-center">
+              <h4 class="mr-4"> Live Sync </h4>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1"></label>
+              </div>
+            </div>
+            <p class="text-secondary"> The feature enables incremental replication from a backup of a virtual machine to a synced copy of the virtual machine (destination VM). </p>
+          </div>
+      </div>
+    </div>
+      ' %>
+
+    <!-- Code Snippet below -->
+      <%= render partial: 'shared/code_snippet', locals: { section_name: 'setting', number: 3, code_snippet: code_snippet} %>
+
+    <!--  -->
+
+</section>
