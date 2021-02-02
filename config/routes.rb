@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'intros/index'
   get 'testimonials/index'
   root to: 'articles#index'
   get '/articles', to: 'articles#index'
@@ -12,5 +13,6 @@ Rails.application.routes.draw do
   get '/testimonials', to: 'testimonials#index'
   get '/logins', to: 'logins#index'
   get '/settings', to: 'settings#index'
+  get '/intros', to: 'intros#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
